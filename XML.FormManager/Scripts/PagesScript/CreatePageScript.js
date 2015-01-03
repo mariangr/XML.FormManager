@@ -114,10 +114,10 @@ CreateModule.Requests = function () {
             url: '/Create/NewContract/',
             data: newContract,
             success: function (result) {
-                alert(result);
+                window.location = "/Home/AllDocs"
             },
             error: function (result) {
-                alert(result);
+                alert(result.status);
             }
         })
     }

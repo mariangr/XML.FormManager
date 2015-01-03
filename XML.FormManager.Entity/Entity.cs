@@ -10,7 +10,7 @@ namespace XML.FormManager.Entity
 {
     public enum XMLFormType {contract, mentor, service};
 
-    public static class Entity
+    public static class XmlCustomEntity
     {
 
         public static XmlDocument XmlGet(string name, XMLFormType type) {
@@ -20,7 +20,14 @@ namespace XML.FormManager.Entity
         }
 
         public static void XmlSave(XmlDocument newDocument, string fileName, XMLFormType type) {
-            newDocument.Save(type + "/" + fileName);
+            var appDomain = System.AppDomain.CurrentDomain;
+            var basePath = appDomain.RelativeSearchPath ?? appDomain.BaseDirectory;
+            var filePath = Path.Combine(basePath.Replace("\\bin", ".Entity"), type.ToString());
+            if(!Directory.Exists(filePath))
+            {
+                Directory.CreateDirectory(filePath);
+            }
+            newDocument.Save(filePath + "/" + fileName + ".xml");
         }
     }
 }

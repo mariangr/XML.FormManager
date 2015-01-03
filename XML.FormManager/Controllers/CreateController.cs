@@ -1,8 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Script.Serialization;
+using System.Xml;
+using System.Xml.Serialization;
+using XML.FormManager.DataLogic;
 using XML.FormManager.Models;
 
 namespace XML.FormManager.Controllers
@@ -16,8 +21,18 @@ namespace XML.FormManager.Controllers
         }
 
         [HttpPost]
-        public void NewContract(ContractModel model) {
-            var result = ModelState.IsValid;
+        public ActionResult NewContract(ContractModel model) {
+            if (ModelState.IsValid)
+            {
+                //var serializer = new JavaScriptSerializer();
+                //ContractManager.SaveContract(serializer.Serialize(model));
+                ContractManager.SaveContract(model);
+                return new HttpStatusCodeResult(HttpStatusCode.OK);
+            }
+            else
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.NotAcceptable);
+            }
         }
 
         public ActionResult GetPartialView(string name) {

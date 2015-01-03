@@ -1,0 +1,36 @@
+<ContractModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <contractNumber>354</contractNumber>
+  <contractDate>354</contractDate>
+  <contractDate2>354</contractDate2>
+  <community>35</community>
+  <contractEmployer>43</contractEmployer>
+  <contractAddress>54</contractAddress>
+  <agencyNumber>35</agencyNumber>
+  <contractEmployee>435</contractEmployee>
+  <employeeCity>43</employeeCity>
+  <employeeIDN>54</employeeIDN>
+  <identityCardNumber>354</identityCardNumber>
+  <identityCardCreateDate>35</identityCardCreateDate>
+  <firstSpecialty>43</firstSpecialty>
+  <firstDiplomaNumber>54</firstDiplomaNumber>
+  <firstDiplomaDate>354</firstDiplomaDate>
+  <firstDiplomaCreator>354</firstDiplomaCreator>
+  <secondSpecialty>35</secondSpecialty>
+  <secondDiplomaNumber>43</secondDiplomaNumber>
+  <secondDiplomaDate>54</secondDiplomaDate>
+  <secondDiplomaCreator>354</secondDiplomaCreator>
+  <workExperienceYears>35</workExperienceYears>
+  <workExperienceMonths>43</workExperienceMonths>
+  <workExperienceDays>54</workExperienceDays>
+  <workExperienceYearsWords>354</workExperienceYearsWords>
+  <workExperienceMonthsWords>354</workExperienceMonthsWords>
+  <workExperienceDaysWords>35</workExperienceDaysWords>
+  <workPosition>43</workPosition>
+  <positionCode>54</positionCode>
+  <workPlace>354</workPlace>
+  <workTime>35</workTime>
+  <testTerm>43</testTerm>
+  <payment>54</payment>
+  <paymentWords>354</paymentWords>
+  <dateStartJob>354</dateStartJob>
+</ContractModel>
