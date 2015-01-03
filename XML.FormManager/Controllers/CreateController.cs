@@ -16,9 +16,8 @@ namespace XML.FormManager.Controllers
         }
 
         [HttpPost]
-        public ActionResult Index(ContractModel model) {
-
-            return Redirect("Home/AllDocs");
+        public void NewContract(ContractModel model) {
+            var result = ModelState.IsValid;
         }
 
         public ActionResult GetPartialView(string name) {

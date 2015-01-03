@@ -25,7 +25,7 @@
 </p>
 
 <div class="contract XmlForm">
-    <form>
+    <form id="contractForm" action="Index">
         <p align=center style='text-align:center;'>
             <b>
                 <span class="innerText">
@@ -42,7 +42,7 @@
 
         <p align=center style='text-align:center;'>
             <span class="innerText">
-                №……./ Дата: ………………… г.
+                №<input type="text" id="contractNumber"/>/ Дата: <input type="text" id="contractDate" /> г.
             </span>
         </p>
 
@@ -54,13 +54,7 @@
 
         <p>
             <span class="innerText">
-                Днес,  …………….г . , в гр. София, община ……………….,
-            </span>
-        </p>
-
-        <p>
-            <span class="innerText">
-                на основание …………………………………………… от Кодекса на труда, се сключи настоящият трудов договор между:
+                Днес,  <input type="text" id="contractDate2" />г . , в гр. София, община <input type="text" id="community" />., се сключи настоящият трудов договор между:
             </span>
         </p>
 
@@ -72,13 +66,7 @@
 
         <p>
             <span class="innerText">
-                1.…………………….- София  със седалище в:…………………………………., ЕИК ………………., фирмено дело ……………… или № ……………… на Агенцията по вписванията представляван от
-            </span>
-            <span lang=BE class="innerText">
-                ………………
-            </span>
-            <span class="innerText">
-                , заемащ длъжността Управител, наричан в този договор <b>РАБОТОДАТЕЛ</b>
+                1.<input type="text" id="contractEmployer" />, със адрес: <input type="text" id="contractAddress" />, № <input type="text" id="agencyNumber" /> на Агенцията по вписванията, заемащ длъжността Управител, наричан в този договор <b>РАБОТОДАТЕЛ</b>
             </span>
         </p>
 
@@ -90,43 +78,45 @@
 
         <p>
             <span class="innerText">
-                2.………………,наричан в този договор <b>СЛУЖИТЕЛ</b>
+                2.<input type="text" id="contractEmployee" />,наричан в този договор <b>СЛУЖИТЕЛ</b>
             </span>
         </p>
 
         <p>
             <span class="innerText">
-                с адрес:  гр ……………… ЕГН ………………, л.к. ……………… , изд. на ………………
+                с адрес:  гр <input type="text" id="employeeCity" /> ЕГН <input type="text" id="employeeIDN" />, л.к. <input type="text" id="identityCardNumber" /> , изд. на <input type="text" id="identityCardCreateDate" />
             </span>
         </p>
 
         <p>
             <span class="innerText">
-                с образование  и специалност: ………………………………………………,
+                с образование  и специалност: <input type="text" id="firstSpecialty" />,
             </span>
         </p>
 
         <p>
             <span class="innerText">
-                Диплома № ……………… / ……………… г. от………………
+                Диплома № <input type="text" id="firstDiplomaNumber" /> / <input type="text" id="firstDiplomaDate" /> г. от<input type="text" id="firstDiplomaCreator" />
             </span>
         </p>
 
         <p>
             <span class="innerText">
-                и друга специалност ……………………………………………… -,
+                и друга специалност <input type="text" id="secondSpecialty" /> -,
             </span>
         </p>
 
         <p class=MsoNormal>
             <span class="innerText">
-                Диплома № - ………………/………………г, от ………………,
+                Диплома № - <input type="text" id="secondDiplomaNumber" /> / <input type="text" id="secondDiplomaDate" /> г, от <input type="text" id="secondDiplomaCreator" />,
             </span>
         </p>
 
         <p class=MsoNormal>
             <span class="innerText">
-                с трудов стаж: ……………… г., ……………… месеца и ……………… дни - словом: ……………… години, ……………… месеца и ……………… дни, (не)пенсиониран(а) поради навършена пределна възраст, нетрудоспособност и т. н.
+                с трудов стаж: <input type="text" id="workExperienceYears" /> г.,
+                <input type="text" id="workExperienceMonths" /> месеца и <input type="text" id="workExperienceDays" /> дни - словом: <input type="text" id="workExperienceYearsWords" /> години,
+                <input type="text" id="workExperienceMonthsWords" /> месеца и <input type="text" id="workExperienceDaysWords" /> дни, (не)пенсиониран(а) поради навършена пределна възраст, нетрудоспособност и т. н.
             </span>
         </p>
 
@@ -144,25 +134,25 @@
 
         <p class=MsoNormal>
             <span class="innerText">
-                1.  РАБОТОДАТЕЛЯТ възлага, а СЛУЖИТЕЛЯТ приема да заема длъжността ……………… , шифър по  НКПД ……………… , която включва отговорностите, изброени в приложената длъжностна характеристика, с която служителят предварително се е запознал и му е връчен екземпляр от нея и да изпълнява възложените му задачи съгласно бизнес-плана на Дружеството.
+                1.  РАБОТОДАТЕЛЯТ възлага, а СЛУЖИТЕЛЯТ приема да заема длъжността <input type="text" id="workPosition" /> , шифър по  НКПД <input type="text" id="positionCode" /> , която включва отговорностите, изброени в приложената длъжностна характеристика, с която служителят предварително се е запознал и му е връчен екземпляр от нея и да изпълнява възложените му задачи съгласно бизнес-плана на Дружеството.
             </span>
         </p>
 
         <p>
             <span class="innerText">
-                2.  Мястото на работа е: ………………
+                2.  Мястото на работа е: <input type="text" id="workPlace" />
             </span>
         </p>
 
         <p>
             <span class="innerText">
-                3.  Работно време: ………………
+                3.  Работно време: <input type="text" id="workTime" />
             </span>
         </p>
 
         <p>
             <span class="innerText">
-                4.  Договорът се сключва ……………… срок на изпитване, в полза на работодателя, смятано от датата на постъпване на работа.
+                4.  Договорът се сключва <input type="text" id="testTerm" /> срок на изпитване, в полза на работодателя, смятано от датата на постъпване на работа.
             </span>
         </p>
 
@@ -182,7 +172,7 @@
 
         <p>
             <span class="innerText">
-                5.  Основното месечно трудово възнаграждение е в размер на ……………… . словом: ……………… , което ще се изплаща еднократно и окончателно до 20-то число на месеца, следващ месеца, за който се отнася.
+                5.  Основното месечно трудово възнаграждение е в размер на <input type="text" id="payment" /> . словом: <input type="text" id="paymentWords" /> , което ще се изплаща еднократно и окончателно до 20-то число на месеца, следващ месеца, за който се отнася.
             </span>
         </p>
 
@@ -271,9 +261,13 @@
 
         <p>
             <span class="innerText">
-                Служителят постъпи на работа на:………………………………
+                Служителят постъпи на работа на: <input type="text" id="dateStartJob" />
             </span>
         </p>
+
+        <button type="submit">Submit1</button>
+
+        <button type="button" onclick="CreateModule.CodeLogic.submitContractForm(event)">Submit</button>
     </form>
 </div>
 <div class="service XmlForm"> no service</div>
