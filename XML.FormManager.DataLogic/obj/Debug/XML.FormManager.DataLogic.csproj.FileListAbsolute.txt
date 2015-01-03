@@ -1,0 +1,7 @@
+C:\Users\Marian\documents\visual studio 2013\Projects\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\XML.FormManager.DataLogic.dll
+C:\Users\Marian\documents\visual studio 2013\Projects\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\XML.FormManager.DataLogic.pdb
+C:\Users\Marian\documents\visual studio 2013\Projects\XML.FormManager\XML.FormManager.DataLogic\obj\Debug\XML.FormManager.DataLogic.csprojResolveAssemblyReference.cache
+C:\Users\Marian\documents\visual studio 2013\Projects\XML.FormManager\XML.FormManager.DataLogic\obj\Debug\XML.FormManager.DataLogic.dll
+C:\Users\Marian\documents\visual studio 2013\Projects\XML.FormManager\XML.FormManager.DataLogic\obj\Debug\XML.FormManager.DataLogic.pdb
+C:\Users\Marian\documents\visual studio 2013\Projects\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\XML.FormManager.Entity.dll
+C:\Users\Marian\documents\visual studio 2013\Projects\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\XML.FormManager.Entity.pdb
