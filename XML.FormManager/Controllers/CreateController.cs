@@ -24,9 +24,7 @@ namespace XML.FormManager.Controllers
         public ActionResult NewContract(ContractModel model) {
             if (ModelState.IsValid)
             {
-                //var serializer = new JavaScriptSerializer();
-                //ContractManager.SaveContract(serializer.Serialize(model));
-                ContractManager.SaveContract(model);
+                ContractManager.SerialiseAndSaveContract(model);
                 return new HttpStatusCodeResult(HttpStatusCode.OK);
             }
             else

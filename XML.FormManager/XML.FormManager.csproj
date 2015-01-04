@@ -125,6 +125,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\ContractModel.cs" />
+    <Compile Include="Models\InternshipModel.cs" />
+    <Compile Include="Models\MentorModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

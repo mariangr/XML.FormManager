@@ -8,7 +8,7 @@ using System.Xml;
 
 namespace XML.FormManager.Entity
 {
-    public enum XMLFormType {contract, mentor, service};
+    public enum XMLFormType {contract, mentor, internship};
 
     public static class XmlCustomEntity
     {
@@ -19,7 +19,7 @@ namespace XML.FormManager.Entity
             return loadedXml;
         }
 
-        public static void XmlSave(XmlDocument newDocument, string fileName, XMLFormType type) {
+        public static void XmlServerSave(this XmlDocument newDocument, string fileName, XMLFormType type) {
             var appDomain = System.AppDomain.CurrentDomain;
             var basePath = appDomain.RelativeSearchPath ?? appDomain.BaseDirectory;
             var filePath = Path.Combine(basePath.Replace("\\bin", ".Entity"), type.ToString());

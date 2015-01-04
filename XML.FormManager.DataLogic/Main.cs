@@ -14,16 +14,30 @@ namespace XML.FormManager.DataLogic
     {
     }
 
-    public static class ContractManager {
-        public static void SaveContract(object contract) {
-            XmlSerializer serializer = new XmlSerializer(contract.GetType());
-            XmlDocument newContract = new XmlDocument();
-            XPathNavigator xNav = newContract.CreateNavigator();
+    public static class ContractManager
+    {
+        public static void SerialiseAndSaveContract(object form)
+        {
+            var formType = form.GetType();
+            XmlSerializer serializer = new XmlSerializer(formType);
+            XmlDocument newDocument = new XmlDocument();
+            XPathNavigator xNav = newDocument.CreateNavigator();
             using (var xs = xNav.AppendChild())
             {
-                serializer.Serialize(xs, contract);
+                serializer.Serialize(xs, form);
             }
-            XmlCustomEntity.XmlSave(newContract, DateTime.Now.ToString().Replace(":","").Replace("/",""), XMLFormType.contract);
+            if (formType.Name == "ContractModel")
+            {
+                newDocument.XmlServerSave(DateTime.Now.ToString().Replace(":", ".").Replace("/", "."), XMLFormType.contract);
+            }
+            else if (formType.Name == "InternshipModel")
+            {
+                newDocument.XmlServerSave(DateTime.Now.ToString().Replace(":", ".").Replace("/", "."), XMLFormType.internship);
+            }
+            else if (formType.Name == "MentorModel")
+            {
+                newDocument.XmlServerSave(DateTime.Now.ToString().Replace(":", ".").Replace("/", "."), XMLFormType.mentor);
+            }
         }
     }
 }
