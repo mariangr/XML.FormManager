@@ -16,7 +16,7 @@ namespace XML.FormManager.DataLogic
 
     public static class ContractManager
     {
-        public static void SerialiseAndSaveContract(object form)
+        public static void SerialiseAndSaveForm(object form)
         {
             var formType = form.GetType();
             XmlSerializer serializer = new XmlSerializer(formType);

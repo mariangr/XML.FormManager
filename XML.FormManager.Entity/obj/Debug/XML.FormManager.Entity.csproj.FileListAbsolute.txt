@@ -5,6 +5,5 @@ C:\Users\Marian\documents\visual studio 2013\Projects\XML.FormManager\XML.FormMa
 C:\Users\Marian\documents\visual studio 2013\Projects\XML.FormManager\XML.FormManager.Entity\obj\Debug\XML.FormManager.Entity.pdb
 C:\Users\Marian\Documents\Github\XML.FormManager\XML.FormManager.Entity\bin\Debug\XML.FormManager.Entity.dll
 C:\Users\Marian\Documents\Github\XML.FormManager\XML.FormManager.Entity\bin\Debug\XML.FormManager.Entity.pdb
-C:\Users\Marian\Documents\Github\XML.FormManager\XML.FormManager.Entity\obj\Debug\XML.FormManager.Entity.csprojResolveAssemblyReference.cache
 C:\Users\Marian\Documents\Github\XML.FormManager\XML.FormManager.Entity\obj\Debug\XML.FormManager.Entity.dll
 C:\Users\Marian\Documents\Github\XML.FormManager\XML.FormManager.Entity\obj\Debug\XML.FormManager.Entity.pdb

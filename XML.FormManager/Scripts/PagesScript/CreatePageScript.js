@@ -1,5 +1,6 @@
 ﻿/// <reference path="../jquery-2.1.3.min.js" />
 var CreateModule = CreateModule || {};
+var contractItems = ["contractNumber", "contractDate", "contractDate2", 'contractNumber', 'contractDate', 'contractDate2', 'community', 'contractEmployer', 'contractAddress', 'agencyNumber', 'contractEmployee', 'employeeCity', 'employeeIDN', 'identityCardNumber', 'identityCardCreateDate', 'firstSpecialty', 'firstDiplomaNumber', 'firstDiplomaDate', 'firstDiplomaCreator', 'secondSpecialty', 'secondDiplomaNumber', 'secondDiplomaDate', 'secondDiplomaCreator', 'workExperienceYears', 'workExperienceMonths', 'workExperienceDays', 'workExperienceYearsWords', 'workExperienceMonthsWords', 'workExperienceDaysWords', 'workPosition', 'positionCode', 'workPlace', 'workTime', 'testTerm', 'payment', 'paymentWords', 'dateStartJob'];
 
 $(document).ready(function () {
     CreateModule.CodeLogic.setVisibility();
@@ -60,41 +61,46 @@ CreateModule.CodeLogic = function () {
     }
 
     var submitContractForm = function (event) {
-        var newContract = new NewContractVM(
-            contractNumber = $('#contractNumber').val(),
-            contractDate = $('#contractDate').val(),
-            contractDate2 = $('#contractDate2').val(),
-            community = $('#community').val(),
-            contractEmployer = $('#contractEmployer').val(),
-            contractAddress = $('#contractAddress').val(),
-            agencyNumber = $('#agencyNumber').val(),
-            contractEmployee = $('#contractEmployee').val(),
-            employeeCity = $('#employeeCity').val(),
-            employeeIDN = $('#employeeIDN').val(),
-            identityCardNumber = $('#identityCardNumber').val(),
-            identityCardCreateDate = $('#identityCardCreateDate').val(),
-            firstSpecialty = $('#firstSpecialty').val(),
-            firstDiplomaNumber = $('#firstDiplomaNumber').val(),
-            firstDiplomaDate = $('#firstDiplomaDate').val(),
-            firstDiplomaCreator = $('#firstDiplomaCreator').val(),
-            secondSpecialty = $('#secondSpecialty').val(),
-            secondDiplomaNumber = $('#secondDiplomaNumber').val(),
-            secondDiplomaDate = $('#secondDiplomaDate').val(),
-            secondDiplomaCreator = $('#secondDiplomaCreator').val(),
-            workExperienceYears = $('#workExperienceYears').val(),
-            workExperienceMonths = $('#workExperienceMonths').val(),
-            workExperienceDays = $('#workExperienceDays').val(),
-            workExperienceYearsWords = $('#workExperienceYearsWords').val(),
-            workExperienceMonthsWords = $('#workExperienceMonthsWords').val(),
-            workExperienceDaysWords = $('#workExperienceDaysWords').val(),
-            workPosition = $('#workPosition').val(),
-            positionCode = $('#positionCode').val(),
-            workPlace = $('#workPlace').val(),
-            workTime = $('#workTime').val(),
-            testTerm = $('#testTerm').val(),
-            payment = $('#payment').val(),
-            paymentWords = $('#paymentWords').val(),
-            dateStartJob = $('#dateStartJob').val())
+        //var newContract = new NewContractVM(
+        //    contractNumber = $('#contractNumber').val(),
+        //    contractDate = $('#contractDate').val(),
+        //    contractDate2 = $('#contractDate2').val(),
+        //    community = $('#community').val(),
+        //    contractEmployer = $('#contractEmployer').val(),
+        //    contractAddress = $('#contractAddress').val(),
+        //    agencyNumber = $('#agencyNumber').val(),
+        //    contractEmployee = $('#contractEmployee').val(),
+        //    employeeCity = $('#employeeCity').val(),
+        //    employeeIDN = $('#employeeIDN').val(),
+        //    identityCardNumber = $('#identityCardNumber').val(),
+        //    identityCardCreateDate = $('#identityCardCreateDate').val(),
+        //    firstSpecialty = $('#firstSpecialty').val(),
+        //    firstDiplomaNumber = $('#firstDiplomaNumber').val(),
+        //    firstDiplomaDate = $('#firstDiplomaDate').val(),
+        //    firstDiplomaCreator = $('#firstDiplomaCreator').val(),
+        //    secondSpecialty = $('#secondSpecialty').val(),
+        //    secondDiplomaNumber = $('#secondDiplomaNumber').val(),
+        //    secondDiplomaDate = $('#secondDiplomaDate').val(),
+        //    secondDiplomaCreator = $('#secondDiplomaCreator').val(),
+        //    workExperienceYears = $('#workExperienceYears').val(),
+        //    workExperienceMonths = $('#workExperienceMonths').val(),
+        //    workExperienceDays = $('#workExperienceDays').val(),
+        //    workExperienceYearsWords = $('#workExperienceYearsWords').val(),
+        //    workExperienceMonthsWords = $('#workExperienceMonthsWords').val(),
+        //    workExperienceDaysWords = $('#workExperienceDaysWords').val(),
+        //    workPosition = $('#workPosition').val(),
+        //    positionCode = $('#positionCode').val(),
+        //    workPlace = $('#workPlace').val(),
+        //    workTime = $('#workTime').val(),
+        //    testTerm = $('#testTerm').val(),
+        //    payment = $('#payment').val(),
+        //    paymentWords = $('#paymentWords').val(),
+        //    dateStartJob = $('#dateStartJob').val())
+
+        var newContract = {};
+        for (var i = 0; i < contractItems.length ; i++) {
+            newContract[contractItems[i]] = $('#' + contractItems[i]).val();
+        }
 
         CreateModule.Requests.saveContractRequest(newContract);
     }
