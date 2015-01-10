@@ -7,6 +7,7 @@ using System.Xml;
 using System.Xml.Serialization;
 using System.Xml.XPath;
 using XML.FormManager.Entity;
+using XML.FormManager.Models;
 
 namespace XML.FormManager.DataLogic
 {
@@ -14,7 +15,7 @@ namespace XML.FormManager.DataLogic
     {
     }
 
-    public static class ContractManager
+    public static class FormsManager
     {
         public static void SerialiseAndSaveForm(object form)
         {
@@ -38,6 +39,15 @@ namespace XML.FormManager.DataLogic
             {
                 newDocument.XmlServerSave(DateTime.Now.ToString().Replace(":", ".").Replace("/", "."), XMLFormType.mentor);
             }
+        }
+
+        public static List<AllDocsModel> GetAllDocs() {
+            var result = new List<AllDocsModel>();
+            var allContracts = new AllDocsModel();
+            allContracts.Type = XMLFormType.contract.ToString();
+            allContracts.Names = XmlCustomEntity.getAllFormNames(XMLFormType.contract);
+            result.Add(allContracts);
+            return result;
         }
     }
 }

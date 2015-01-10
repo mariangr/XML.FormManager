@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using XML.FormManager.DataLogic;
+using XML.FormManager.Models;
 
 namespace XML.FormManager.Controllers
 {
@@ -12,7 +14,8 @@ namespace XML.FormManager.Controllers
         // GET: /Home/
         public ActionResult AllDocs()
         {
-            return View();
+            var model = FormsManager.GetAllDocs();
+            return View(model);
         }
 	}
 }

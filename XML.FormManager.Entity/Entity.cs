@@ -14,6 +14,20 @@ namespace XML.FormManager.Entity
 
     public static class XmlCustomEntity
     {
+        public static string[] getAllFormNames(XMLFormType type)
+        {
+            List<string> result = new List<string>();
+            var path = getPath(type);
+            XmlDocument forms = new XmlDocument();
+            forms.Load(path + "/Forms.xml");
+            var names = forms.ChildNodes[1].FirstChild.ChildNodes;
+            foreach (XmlElement item in names)
+            {
+                result.Add(item.Attributes[0].Value.ToString());
+            }
+
+            return result.ToArray();
+        }
 
         public static XmlDocument XmlGet(string name, XMLFormType type) {
             var loadedXml = new XmlDocument();

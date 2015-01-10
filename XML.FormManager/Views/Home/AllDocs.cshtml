@@ -1,7 +1,13 @@
-﻿
+﻿@model IEnumerable<XML.FormManager.Models.AllDocsModel>
 @{
-    ViewBag.Title = "View1";
+    ViewBag.Title = "All Documents";
 }
 
-<h2>View1</h2>
-
+@foreach (var item in Model)
+{
+    <p>@item.Type</p>
+    foreach (var form in item.Names)
+    { 
+        <p>@form</p>
+    }
+}
