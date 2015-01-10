@@ -61,7 +61,7 @@ namespace XML.FormManager.DataLogic
             }
 
             var allMentors = new AllDocsModel();
-            allMentors.Type = XMLFormType.internship.ToString();
+            allMentors.Type = XMLFormType.mentor.ToString();
             allMentors.Names = XmlCustomEntity.getAllFormNames(XMLFormType.mentor);
             if(allMentors.Names.Length > 0)
             {
