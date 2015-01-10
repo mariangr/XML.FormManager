@@ -43,10 +43,31 @@ namespace XML.FormManager.DataLogic
 
         public static List<AllDocsModel> GetAllDocs() {
             var result = new List<AllDocsModel>();
+
             var allContracts = new AllDocsModel();
             allContracts.Type = XMLFormType.contract.ToString();
             allContracts.Names = XmlCustomEntity.getAllFormNames(XMLFormType.contract);
-            result.Add(allContracts);
+            if (allContracts.Names.Length > 0)
+            {
+                result.Add(allContracts);
+            }
+
+            var allInternships = new AllDocsModel();
+            allInternships.Type = XMLFormType.internship.ToString();
+            allInternships.Names = XmlCustomEntity.getAllFormNames(XMLFormType.internship);
+            if (allInternships.Names.Length > 0)
+            {
+                result.Add(allInternships);
+            }
+
+            var allMentors = new AllDocsModel();
+            allMentors.Type = XMLFormType.internship.ToString();
+            allMentors.Names = XmlCustomEntity.getAllFormNames(XMLFormType.mentor);
+            if(allMentors.Names.Length > 0)
+            {
+                result.Add(allMentors);
+            }
+
             return result;
         }
     }

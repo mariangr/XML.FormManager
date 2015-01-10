@@ -5,9 +5,9 @@
 
 @foreach (var item in Model)
 {
-    <p>@item.Type</p>
+    <p>Form type: @item.Type</p>
     foreach (var form in item.Names)
     { 
-        <p>@form</p>
+        <p>Name: @form</p>
     }
 }
