@@ -71,7 +71,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="contract\142015 121124 AM.xml" />
+    <Content Include="contract\Forms.xml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
