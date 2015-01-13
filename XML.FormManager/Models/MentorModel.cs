@@ -21,8 +21,10 @@ namespace XML.FormManager.Models
         public int mentorStudentDay { get; set; }
         public int mentorStudentMonth { get; set; }
         public int mentorStudentYear { get; set; }
-        public int mentorStudentArrival { get; set; }
-        public int mentorStudentLeaving { get; set; }
+        public int mentorStudentArrivalHour { get; set; }
+        public int mentorStudentArrivalMinutes { get; set; }
+        public int mentorStudentLeavingHour { get; set; }
+        public int mentorStudentLeavingMinutes { get; set; }
         public string mentorStudentDescription { get; set; }
         public int mentorStudentRating { get; set; }
     }
