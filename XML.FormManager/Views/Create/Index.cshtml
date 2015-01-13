@@ -457,8 +457,59 @@
     </form>
 </div>
 
-<div class="mentor XmlForm"> 
-    no mentor
+<div class="mentor XmlForm">
+    <form id="mentorForm" action="Index">
+        <p style="text-align:center;">БЛАНКА ЗА НАСТАВНИК</p>
+        <p style="text-align:center;">
+            № на бланката: <input type="text" id="mentorNumber" />
+            </p>
+        <p style="text-align:center;">
+            Дата (ДД-ММ-ГГГГ): <input size="2" maxlength="2" type="text" id="mentorDay" /> - <input size="2" maxlength="2" type="text" id="mentorMonth" /> - <input size="2" maxlength="4" type="text" id="mentorYear" />
+        </p>
+        <p style="font-weight:bold;">
+            Данни на Ментора
+        </p>
+        <p>
+            Име: <input type="text" id="mentorFirstName" />
+        </p>
+        <p>
+            Презиме: <input type="text" id="mentorMiddleName" />
+        </p>
+        <p>
+            Фамилия: <input type="text" id="mentorLastName" />
+        </p>
+        <p>
+            Организация: <input type="text" id="mentorOrganization" />
+        </p>
+        <p style="font-weight:bold;">
+            Данни на студента
+        </p>
+        <p>
+            Име: <input type="text" id="mentorFirstNameStudent" />
+        </p>
+        <p>
+            Презиме: <input type="text" id="mentorMiddleNameStudent" />
+        </p>
+        <p>
+            Фамилия: <input type="text" id="mentorLastNameStudent" />
+        </p>
+        <p>
+            Дата на изработените часове (ДД-ММ-ГГГГ): <input size="2" maxlength="2" type="text" id="mentorStudentDay" /> - <input size="2" maxlength="2" type="text" id="mentorStudentMonth" /> - <input size="2" maxlength="4" type="text" id="mentorStudentYear" />
+        </p>
+        <p>
+            Час на пристигане: <input type="text" id="mentorStudentArrival" />
+        </p>
+        <p>
+            Час на приключване: <input type="text" id="mentorStudentLeaving" />
+        </p>
+        <p>
+            Описание на работата: <input type="text" id="mentorStudentDescription" />
+        </p>
+        <p>
+           Оценка на свършената работа (1-10): <input type="text" id="mentorStudentRating" />
+        </p>
+        <button type="button" onclick="CreateModule.CodeLogic.submitMentorForm(event)">Submit</button>
+    </form>
 </div>
 
 <script src="~/Scripts/PagesScript/CreatePageScript.js"></script>

@@ -2,7 +2,7 @@
 var CreateModule = CreateModule || {};
 var contractItems = ["contractNumber", "contractDate", "contractDate2", 'contractNumber', 'contractDate', 'contractDate2', 'community', 'contractEmployer', 'contractAddress', 'agencyNumber', 'contractEmployee', 'employeeCity', 'employeeIDN', 'identityCardNumber', 'identityCardCreateDate', 'firstSpecialty', 'firstDiplomaNumber', 'firstDiplomaDate', 'firstDiplomaCreator', 'secondSpecialty', 'secondDiplomaNumber', 'secondDiplomaDate', 'secondDiplomaCreator', 'workExperienceYears', 'workExperienceMonths', 'workExperienceDays', 'workExperienceYearsWords', 'workExperienceMonthsWords', 'workExperienceDaysWords', 'workPosition', 'positionCode', 'workPlace', 'workTime', 'testTerm', 'payment', 'paymentWords', 'dateStartJob'];
 var internshipItems = ["internshipNumber", "internshipDate", "internshipCompany", "internshipCompanyTown", "internshipCompanyNumber", "internshipCompanyBulstat", "internshipCompanyLeaderName", "internshipCompanyLeaderEgn", "internshipStudentName", "internshipStudentEgn", "internshipStudentLK", "internshipStudentLKMVR", "internshipStudentLKDate", "internshipStudentAddressTown", "internshipStudentAddressStreet", "internshipStudentAddressStreetNumber", "internshipStudentTelephoneNumber", "internshipStudentUniversity", "internshipStudentUniversityTown", "internshipStudentCourse", "internshipStudentGrade", "internshipStudentFaculty", "internshipStudentNumber", "internshipName", "internshipTasks", "internshipMentorName", "internshipMentorPosition", "internshipAcquiredSkills", "internshipRecommendations", "internshipAppraisalWord", "internshipAppraisal", "internshipCurrentDate", "internshipCurrentTown"];
-
+var mentorItems = ["mentorNumber", "mentorDay", "mentorMonth", "mentorYear", "mentorFirstName", "mentorMiddleName", "mentorLastName", "mentorOrganization", "mentorFirstNameStudent", "mentorMiddleNameStudent", "mentorLastNameStudent", "mentorStudentDay", "mentorStudentMonth", "mentorStudentYear", "mentorStudentArrival", "mentorStudentLeaving", "mentorStudentDescription", "mentorStudentRating"];
 $(document).ready(function () {
     CreateModule.CodeLogic.setVisibility();
     CreateModule.CodeLogic.manageFormVisibility();
@@ -40,12 +40,21 @@ CreateModule.CodeLogic = function () {
 
         CreateModule.Requests.saveInternshipRequest(newInternship);
     }
+    var submitMentorForm = function (event) {
+        var newMentor = {};
+        for (var i = 0; i < mentorItems.length ; i++) {
+            newMentor[mentorItems[i]] = $('#' + mentorItems[i]).val();
+        }
+
+        CreateModule.Requests.saveMentorRequest(newMentor);
+    }
 
     return {
         setVisibility: setVisibility,
         manageFormVisibility: manageFormVisibility,
         submitContractForm: submitContractForm,
         submitInternshipForm: submitInternshipForm,
+        submitMentorForm: submitMentorForm,
     }
 }()
 
@@ -77,9 +86,23 @@ CreateModule.Requests = function () {
             }
         })
     }
+    var saveMentorRequest = function (newMentor) {
+        $.ajax({
+            type: 'POST',
+            url: '/Create/NewMentor/',
+            data: newMentor,
+            success: function (result) {
+                window.location = "/Home/AllDocs"
+            },
+            error: function (result) {
+                alert(result.status);
+            }
+        })
+    }
 
     return {
         saveContractRequest: saveContractRequest,
-        saveInternshipRequest: saveInternshipRequest
+        saveInternshipRequest: saveInternshipRequest,
+        saveMentorRequest: saveMentorRequest
     }
 }()

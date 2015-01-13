@@ -47,7 +47,20 @@ namespace XML.FormManager.Controllers
             }
 
         }
+        [HttpPost]
+        public ActionResult NewMentor(MentorModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                FormsManager.SerialiseAndSaveForm(model);
+                return new HttpStatusCodeResult(HttpStatusCode.OK);
+            }
+            else
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.NotAcceptable);
+            }
 
+        }
         public ActionResult GetPartialView(string name) {
             return PartialView(name);
         }
