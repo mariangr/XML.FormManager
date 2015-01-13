@@ -7,7 +7,7 @@
   <xs:element name="contract">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="contractNumber" type="xs:integer" minOccurs="1" maxOccurs="1" />
+        <xs:element name="contractNumber" type="xs:integer" minOccurs="1" maxOccurs="1"/>
         <xs:element name="contractDate" type="xs:dateTime" minOccurs="1" maxOccurs="1"/>
         <xs:element name="contractDate2" type="xs:unsignedShort" minOccurs="1" maxOccurs="1"/>
         <xs:element name="community" type="xs:unsignedByte" minOccurs="1" maxOccurs="1"/>
