@@ -55,11 +55,12 @@ namespace XML.FormManager.Entity
             attr.Value = fileName.ToString();
             document.Attributes.Append(attr);
 
+            document.Attributes.RemoveNamedItem("xmlns");
             appendNode.AppendChild(document);
 
             try
             {
-                XmlHelpers.Validate(forms, type);
+                //XmlHelpers.Validate(forms, type);
             }
             catch (InvalidOperationException ioe)
             {

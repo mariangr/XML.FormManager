@@ -1,41 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Library xmlns="http://xml.form.manager.bg" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Contracts>
-    <contract contractName="1.13.2015 9.35.51 PM" xmlns="">
-      <contractNumber>64</contractNumber>
-      <contractDate>654</contractDate>
-      <contractDate2>654</contractDate2>
-      <community>65</community>
-      <contractEmployer>46</contractEmployer>
-      <contractAddress>54</contractAddress>
-      <agencyNumber>654</agencyNumber>
-      <contractEmployee>65</contractEmployee>
-      <employeeCity>465</employeeCity>
-      <employeeIDN>46</employeeIDN>
-      <identityCardNumber>54</identityCardNumber>
-      <identityCardCreateDate>654</identityCardCreateDate>
-      <firstSpecialty>65</firstSpecialty>
-      <firstDiplomaNumber>465</firstDiplomaNumber>
-      <firstDiplomaDate>46</firstDiplomaDate>
-      <firstDiplomaCreator>54</firstDiplomaCreator>
-      <secondSpecialty>654</secondSpecialty>
-      <secondDiplomaNumber>65</secondDiplomaNumber>
-      <secondDiplomaDate>46</secondDiplomaDate>
-      <secondDiplomaCreator>54</secondDiplomaCreator>
-      <workExperienceYears>654</workExperienceYears>
-      <workExperienceMonths>65</workExperienceMonths>
-      <workExperienceDays>465</workExperienceDays>
-      <workExperienceYearsWords>4</workExperienceYearsWords>
-      <workExperienceMonthsWords>654</workExperienceMonthsWords>
-      <workExperienceDaysWords>65</workExperienceDaysWords>
-      <workPosition>465</workPosition>
-      <positionCode>4</positionCode>
-      <workPlace>654</workPlace>
-      <workTime>654</workTime>
-      <testTerm>65</testTerm>
-      <payment>465</payment>
-      <paymentWords>4</paymentWords>
-      <dateStartJob>65466</dateStartJob>
+  <Contracts xmlns="http://xml.form.manager.bg">
+    <contract contractName="1/14/2015 12:46:30 AM">
+      <contractNumber>1</contractNumber>
+      <contractDate>1</contractDate>
+      <contractDate2>1</contractDate2>
+      <community>1</community>
+      <contractEmployer>1</contractEmployer>
+      <contractAddress>1</contractAddress>
+      <agencyNumber>1</agencyNumber>
+      <contractEmployee>1</contractEmployee>
+      <employeeCity>1</employeeCity>
+      <employeeIDN>1</employeeIDN>
+      <identityCardNumber>1</identityCardNumber>
+      <identityCardCreateDate>1</identityCardCreateDate>
+      <firstSpecialty>1</firstSpecialty>
+      <firstDiplomaNumber>1</firstDiplomaNumber>
+      <firstDiplomaDate>1</firstDiplomaDate>
+      <firstDiplomaCreator>1</firstDiplomaCreator>
+      <secondSpecialty>1</secondSpecialty>
+      <secondDiplomaNumber>1</secondDiplomaNumber>
+      <secondDiplomaDate>1</secondDiplomaDate>
+      <secondDiplomaCreator>1</secondDiplomaCreator>
+      <workExperienceYears>1</workExperienceYears>
+      <workExperienceMonths>11</workExperienceMonths>
+      <workExperienceDays>1</workExperienceDays>
+      <workExperienceYearsWords>1</workExperienceYearsWords>
+      <workExperienceMonthsWords>1</workExperienceMonthsWords>
+      <workExperienceDaysWords>1</workExperienceDaysWords>
+      <workPosition>1</workPosition>
+      <positionCode>1</positionCode>
+      <workPlace>1</workPlace>
+      <workTime>1</workTime>
+      <testTerm>1</testTerm>
+      <payment>1</payment>
+      <paymentWords>1</paymentWords>
+      <dateStartJob>1</dateStartJob>
     </contract>
   </Contracts>
 </Library>
