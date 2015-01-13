@@ -21,7 +21,8 @@ namespace XML.FormManager.Controllers
         }
 
         [HttpPost]
-        public ActionResult NewContract(ContractModel model) {
+        public ActionResult NewContract(ContractModel model)
+        {
             if (ModelState.IsValid)
             {
                 FormsManager.SerialiseAndSaveForm(model);
@@ -31,6 +32,20 @@ namespace XML.FormManager.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.NotAcceptable);
             }
+        }
+
+        [HttpPost]
+        public ActionResult NewInternship(InternshipModel model) {
+            if (ModelState.IsValid)
+            {
+                FormsManager.SerialiseAndSaveForm(model);
+                return new HttpStatusCodeResult(HttpStatusCode.OK);
+            }
+            else
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.NotAcceptable);
+            }
+
         }
 
         public ActionResult GetPartialView(string name) {

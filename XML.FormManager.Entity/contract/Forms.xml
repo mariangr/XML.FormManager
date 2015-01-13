@@ -109,5 +109,20 @@
       <paymentWords>465</paymentWords>
       <dateStartJob>46</dateStartJob>
     </contract>
+    <contract contractName="1.13.2015 12.36.19 AM" xmlns="">
+      <contractNumber>0</contractNumber>
+      <firstDiplomaNumber>0</firstDiplomaNumber>
+      <secondDiplomaNumber>0</secondDiplomaNumber>
+    </contract>
+    <contract contractName="1.13.2015 8.30.04 PM" xmlns="">
+      <contractNumber>0</contractNumber>
+      <firstDiplomaNumber>0</firstDiplomaNumber>
+      <secondDiplomaNumber>0</secondDiplomaNumber>
+    </contract>
+    <contract contractName="1.13.2015 8.41.43 PM" xmlns="">
+      <contractNumber>0</contractNumber>
+      <firstDiplomaNumber>0</firstDiplomaNumber>
+      <secondDiplomaNumber>0</secondDiplomaNumber>
+    </contract>
   </Contracts>
 </Library>

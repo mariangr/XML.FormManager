@@ -268,9 +268,197 @@
         <button type="button" onclick="CreateModule.CodeLogic.submitContractForm(event)">Submit</button>
     </form>
 </div>
+
 <div class="internship XmlForm">
-     no internship
+    <form id="internshipForm" action="Index">
+        <p align=center style='text-align:center;'>
+            <b>
+                <span class="innerText">
+                    БЛАНКА ЗА ПРОВЕДЕН СТАЖ
+                </span>
+            </b>
+        </p>
+
+        <p align=center style='text-align:center;'>
+            <span class="innerText">
+                &nbsp;
+            </span>
+        </p>
+
+        <p align=center style='text-align:center;'>
+            <span class="innerText">
+                №<input type="text" id="internshipNumber" />/ Дата: <input type="text" id="internshipDate" /> г.
+            </span>
+        </p>
+
+        <p>
+            <span class="innerText">
+                &nbsp;
+            </span>
+        </p>
+
+        <p>
+            Настоящата бланка се издава във връзка с провеждане на Учебно-практически стаж.
+        </p>
+
+        <p>
+            <span class="innerText">
+                &nbsp;
+            </span>
+        </p>
+
+        <p>
+            Фирмата <input type="text" id="internshipCompany" /> със седалище и адрес на управление <input type="text" id="internshipCompanyTown" /> регистрирана по фирмено дело № <input type="text" id="internshipCompanyNumber" /> по описа на
+        </p>
+        <p>
+            СГС, булстат <input type="text" id="internshipCompanyBulstat" />, представлявана от <input type="text" id="internshipCompanyLeaderName" />, ЕГН: <input type="text" id="internshipCompanyLeaderEgn" /> ,издава настоящия документ
+        </p>
+
+        <p>
+            <span class="innerText">
+                &nbsp;
+            </span>
+        </p>
+
+        <p>
+            на
+        </p>
+
+        <p>
+            <span class="innerText">
+                &nbsp;
+            </span>
+        </p>
+
+        <p>
+            <input type="text" id="internshipStudentName" /> с ЕГН: <input type="text" id="internshipStudentEgn" /> и л.к. <input type="text" id="internshipStudentLK" /> издадена от <input type="text" id="internshipStudentLKMVR" /> на <input type="text" id="internshipStudentLKDate" />г.
+        </p>
+
+        <p>
+            Адрес: гр. <input type="text" id="internshipStudentAddressTown" />, ул. <input type="text" id="internshipStudentAddressStreet" /> № <input type="text" id="internshipStudentAddressStreetNumber" />, тел: <input type="text" id="internshipStudentTelephoneNumber" />.
+        </p>
+
+        <p>
+            Студент в <input type="text" id="internshipStudentUniversity" /> гр. <input type="text" id="internshipStudentUniversityTown" />, <input type="text" id="internshipStudentCourse" /> курс <input type="text" id="internshipStudentGrade" />, факултет <input type="text" id="internshipStudentFaculty" />
+        </p>
+
+        <p>
+            фак.н.<input type="text" id="internshipStudentNumber" />.
+        </p>
+
+        <p>
+            <span class="innerText">
+                &nbsp;
+            </span>
+        </p>
+
+        <p>
+            Студентката/а е преминал стаж на тема <input type="text" id="internshipName" />
+        </p>
+
+        <p>
+            <span class="innerText">
+                &nbsp;
+            </span>
+        </p>
+
+        <p>
+            По време на стажа основните задачи са:
+        </p>
+        <textarea name="message" rows="5" cols="170" id="internshipTasks"></textarea>
+
+        <p>
+            <span class="innerText">
+                &nbsp;
+            </span>
+        </p>
+
+        <p>
+            Стажа се провеждаше под наблюдението на ментор <input type="text" id="internshipMentorName" />, работещ като <input type="text" id="internshipMentorPosition" />.
+        </p>
+
+        <p>
+            <span class="innerText">
+                &nbsp;
+            </span>
+        </p>
+
+        <p>
+            Добитите и развитите качества по време на стажа са:
+        </p>
+        <textarea name="message" rows="5" cols="170" id="internshipAcquiredSkills"></textarea>
+
+        <p>
+            <span class="innerText">
+                &nbsp;
+            </span>
+        </p>
+
+        <p>
+            Препоръки и мнение от ментора за стажанта:
+        </p>
+        <textarea name="message" rows="5" cols="170" id="internshipRecommendations"></textarea>
+
+        <p>
+            <span class="innerText">
+                &nbsp;
+            </span>
+        </p>
+
+        <p>
+            Оценка: <input type="text" id="internshipAppraisalWord" /> ( <input type="text" id="internshipAppraisal" /> )
+        </p>
+
+        <p>
+            <span class="innerText">
+                &nbsp;
+            </span>
+        </p>
+
+        <p>
+            <span class="innerText">
+                &nbsp;
+            </span>
+        </p>
+
+        <p align=center style='text-align:left;'>
+            <span class="innerText">
+                Дата: <input type="text" id="internshipCurrentDate" /> г.
+            </span>
+        </p>
+
+        <p align=center style='text-align:right;'>
+            <span class="innerText">
+                /................................/<br>
+                Ментор: <input type="text" id="internshipMentorName" />
+            </span>
+        </p>
+
+        <p align=center style='text-align:left;'>
+            <span class="innerText">
+                гр.: <input type="text" id="internshipCurrentTown" />
+            </span>
+        </p>
+
+        <p align=center style='text-align:right;'>
+            <span class="innerText">
+                /................................/<br>
+                Управител: <input type="text" id="internshipCompanyLeaderName" />
+            </span>
+        </p>
+
+        <p>
+            <span class="innerText">
+                &nbsp;
+            </span>
+        </p>
+
+        <button type="button" onclick="CreateModule.CodeLogic.submitInternshipForm(event)">Submit</button>
+    </form>
 </div>
-<div class="mentor XmlForm"> no mentor</div>
+
+<div class="mentor XmlForm"> 
+    no mentor
+</div>
 
 <script src="~/Scripts/PagesScript/CreatePageScript.js"></script>

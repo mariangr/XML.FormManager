@@ -1,6 +1,7 @@
 ﻿/// <reference path="../jquery-2.1.3.min.js" />
 var CreateModule = CreateModule || {};
 var contractItems = ["contractNumber", "contractDate", "contractDate2", 'contractNumber', 'contractDate', 'contractDate2', 'community', 'contractEmployer', 'contractAddress', 'agencyNumber', 'contractEmployee', 'employeeCity', 'employeeIDN', 'identityCardNumber', 'identityCardCreateDate', 'firstSpecialty', 'firstDiplomaNumber', 'firstDiplomaDate', 'firstDiplomaCreator', 'secondSpecialty', 'secondDiplomaNumber', 'secondDiplomaDate', 'secondDiplomaCreator', 'workExperienceYears', 'workExperienceMonths', 'workExperienceDays', 'workExperienceYearsWords', 'workExperienceMonthsWords', 'workExperienceDaysWords', 'workPosition', 'positionCode', 'workPlace', 'workTime', 'testTerm', 'payment', 'paymentWords', 'dateStartJob'];
+var internshipItems = ["internshipNumber", "internshipDate", "internshipCompany", "internshipCompanyTown", "internshipCompanyNumber", "internshipCompanyBulstat", "internshipCompanyLeaderName", "internshipCompanyLeaderEgn", "internshipStudentName", "internshipStudentEgn", "internshipStudentLK", "internshipStudentLKMVR", "internshipStudentLKDate", "internshipStudentAddressTown", "internshipStudentAddressStreet", "internshipStudentAddressStreetNumber", "internshipStudentTelephoneNumber", "internshipStudentUniversity", "internshipStudentUniversityTown", "internshipStudentCourse", "internshipStudentGrade", "internshipStudentFaculty", "internshipStudentNumber", "internshipName", "internshipTasks", "internshipMentorName", "internshipMentorPosition", "internshipAcquiredSkills", "internshipRecommendations", "internshipAppraisalWord", "internshipAppraisal", "internshipCurrentDate", "internshipCurrentTown"];
 
 $(document).ready(function () {
     CreateModule.CodeLogic.setVisibility();
@@ -31,11 +32,20 @@ CreateModule.CodeLogic = function () {
         CreateModule.Requests.saveContractRequest(newContract);
     }
 
+    var submitInternshipForm = function (event) {
+        var newInternship = {};
+        for (var i = 0; i < internshipItems.length ; i++) {
+            newInternship[internshipItems[i]] = $('#' + internshipItems[i]).val();
+        }
+
+        CreateModule.Requests.saveInternshipRequest(newInternship);
+    }
+
     return {
         setVisibility: setVisibility,
         manageFormVisibility: manageFormVisibility,
         submitContractForm: submitContractForm,
-
+        submitInternshipForm: submitInternshipForm,
     }
 }()
 
@@ -54,7 +64,22 @@ CreateModule.Requests = function () {
         })
     }
 
+    var saveInternshipRequest = function (newInternship) {
+        $.ajax({
+            type: 'POST',
+            url: '/Create/NewInternship/',
+            data: newInternship,
+            success: function (result) {
+                window.location = "/Home/AllDocs"
+            },
+            error: function (result) {
+                alert(result.status);
+            }
+        })
+    }
+
     return {
-        saveContractRequest: saveContractRequest
+        saveContractRequest: saveContractRequest,
+        saveInternshipRequest: saveInternshipRequest
     }
 }()
