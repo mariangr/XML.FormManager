@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://w3.org/contracts" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import />
+  <xs:element name="Library">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Contracts">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="contract" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="contract">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="contractNumber" type="xs:unsignedByte" />
+        <xs:element name="contractDate" type="xs:unsignedShort" />
+        <xs:element name="contractDate2" type="xs:unsignedShort" />
+        <xs:element name="community" type="xs:unsignedByte" />
+        <xs:element name="contractEmployer" type="xs:unsignedByte" />
+        <xs:element name="contractAddress" type="xs:unsignedByte" />
+        <xs:element name="agencyNumber" type="xs:unsignedShort" />
+        <xs:element name="contractEmployee" type="xs:unsignedByte" />
+        <xs:element name="employeeCity" type="xs:unsignedShort" />
+        <xs:element name="employeeIDN" type="xs:unsignedByte" />
+        <xs:element name="identityCardNumber" type="xs:unsignedByte" />
+        <xs:element name="identityCardCreateDate" type="xs:unsignedShort" />
+        <xs:element name="firstSpecialty" type="xs:unsignedByte" />
+        <xs:element name="firstDiplomaNumber" type="xs:unsignedShort" />
+        <xs:element name="firstDiplomaDate" type="xs:unsignedByte" />
+        <xs:element name="firstDiplomaCreator" type="xs:unsignedByte" />
+        <xs:element name="secondSpecialty" type="xs:unsignedShort" />
+        <xs:element name="secondDiplomaNumber" type="xs:unsignedByte" />
+        <xs:element name="secondDiplomaDate" type="xs:unsignedByte" />
+        <xs:element name="secondDiplomaCreator" type="xs:unsignedByte" />
+        <xs:element name="workExperienceYears" type="xs:unsignedShort" />
+        <xs:element name="workExperienceMonths" type="xs:unsignedByte" />
+        <xs:element name="workExperienceDays" type="xs:unsignedShort" />
+        <xs:element name="workExperienceYearsWords" type="xs:unsignedByte" />
+        <xs:element name="workExperienceMonthsWords" type="xs:unsignedShort" />
+        <xs:element name="workExperienceDaysWords" type="xs:unsignedByte" />
+        <xs:element name="workPosition" type="xs:unsignedShort" />
+        <xs:element name="positionCode" type="xs:unsignedByte" />
+        <xs:element name="workPlace" type="xs:unsignedShort" />
+        <xs:element name="workTime" type="xs:unsignedShort" />
+        <xs:element name="testTerm" type="xs:unsignedByte" />
+        <xs:element name="payment" type="xs:unsignedShort" />
+        <xs:element name="paymentWords" type="xs:unsignedByte" />
+        <xs:element name="dateStartJob" type="xs:unsignedShort" />
+      </xs:sequence>
+      <xs:attribute name="contractName" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

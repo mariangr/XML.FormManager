@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
+using System.Xml.Schema;
 
 namespace XML.FormManager.Entity
 {
@@ -35,7 +36,7 @@ namespace XML.FormManager.Entity
             return loadedXml;
         }
 
-        public static void XmlServerSave(this XmlDocument newDocument, string fileName, XMLFormType type) {
+        public static bool XmlServerSave(this XmlDocument newDocument, string fileName, XMLFormType type) {
             var filePath = XmlHelpers.getPath(type, "Entity");
             XmlHelpers.CheckCreateDirectory(filePath);
 
@@ -55,7 +56,18 @@ namespace XML.FormManager.Entity
             document.Attributes.Append(attr);
 
             appendNode.AppendChild(document);
+
+            try
+            {
+                XmlHelpers.Validate(forms, type);
+            }
+            catch (InvalidOperationException ioe)
+            {
+                return false;
+            }
+
             forms.Save(filePath + "/Forms.xml");
+            return true;
         }
 
         
@@ -63,18 +75,11 @@ namespace XML.FormManager.Entity
 
     public static class XmlHelpers
     {
-        public static string getPath(XMLFormType? type, string level)
+        public static string getPath(XMLFormType type, string level)
         {
             var appDomain = System.AppDomain.CurrentDomain;
             var basePath = appDomain.RelativeSearchPath ?? appDomain.BaseDirectory;
-            if (type != null)
-            {
-                return Path.Combine(basePath.Replace("\\bin", "." + level), type.ToString());
-            }
-            else
-            {
-                return Path.Combine(basePath.Replace("\\bin", "." + level));
-            }
+            return Path.Combine(basePath.Replace("\\bin", "." + level), type.ToString());
         }
 
         public static void CheckCreateDirectory(string path)
@@ -83,6 +88,20 @@ namespace XML.FormManager.Entity
             {
                 Directory.CreateDirectory(path);
             }
+        }
+
+        public static void Validate(XmlDocument doc, XMLFormType type)
+        {
+            var path = XmlHelpers.getPath(type, "Entity");
+            XmlTextReader reader = new XmlTextReader(path + "/Form.xsd");
+            XmlSchema schema = XmlSchema.Read(reader, method);
+            doc.Schemas.Add(schema);
+            doc.Validate(method);
+        }
+
+        static void method(object sender, ValidationEventArgs e)
+        {
+            throw new InvalidOperationException(e.Message);
         }
     }
 }

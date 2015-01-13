@@ -8,7 +8,6 @@ using System.Xml.Serialization;
 using System.Xml.XPath;
 using XML.FormManager.Entity;
 using XML.FormManager.Models;
-using XML.FormManager.Validation;
 
 namespace XML.FormManager.DataLogic
 {
@@ -18,9 +17,10 @@ namespace XML.FormManager.DataLogic
 
     public static class FormsManager
     {
-        public static void SerialiseAndSaveForm(object form)
+        public static bool SerialiseAndSaveForm(object form)
         {
             var formType = form.GetType();
+
             XmlSerializer serializer = new XmlSerializer(formType);
             XmlDocument newDocument = new XmlDocument();
             XPathNavigator xNav = newDocument.CreateNavigator();
@@ -30,16 +30,18 @@ namespace XML.FormManager.DataLogic
             }
             if (formType.Name == "ContractModel")
             {
-                newDocument.ServerValidateAndSave(XMLFormType.contract);
+                return newDocument.XmlServerSave(DateTime.Now.ToString(), XMLFormType.contract);
             }
             else if (formType.Name == "InternshipModel")
             {
-                newDocument.ServerValidateAndSave(XMLFormType.internship);
+                return newDocument.XmlServerSave(DateTime.Now.ToString(), XMLFormType.internship);
             }
             else if (formType.Name == "MentorModel")
             {
-                newDocument.ServerValidateAndSave(XMLFormType.mentor);
+                return newDocument.XmlServerSave(DateTime.Now.ToString(), XMLFormType.mentor);
             }
+
+            return false;
         }
 
         public static List<AllDocsModel> GetAllDocs() {
