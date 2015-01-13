@@ -76,6 +76,10 @@
       <Project>{71c47e74-ccca-46d7-9986-c4f94179260b}</Project>
       <Name>XML.FormManager.Entity</Name>
     </ProjectReference>
+    <ProjectReference Include="..\XML.FormManager.Validation\XML.FormManager.Validation.csproj">
+      <Project>{e8d958d8-7b8d-4f31-9a1d-1910c3038f9b}</Project>
+      <Name>XML.FormManager.Validation</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

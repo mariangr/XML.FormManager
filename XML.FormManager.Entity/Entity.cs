@@ -17,7 +17,7 @@ namespace XML.FormManager.Entity
         public static string[] getAllFormNames(XMLFormType type)
         {
             List<string> result = new List<string>();
-            var path = getPath(type);
+            var path = XmlHelpers.getPath(type, "Entity");
             XmlDocument forms = new XmlDocument();
             forms.Load(path + "/Forms.xml");
             var names = forms.ChildNodes[1].FirstChild.ChildNodes;
@@ -36,8 +36,8 @@ namespace XML.FormManager.Entity
         }
 
         public static void XmlServerSave(this XmlDocument newDocument, string fileName, XMLFormType type) {
-            var filePath = getPath(type);
-            CheckCreateDirectory(filePath);
+            var filePath = XmlHelpers.getPath(type, "Entity");
+            XmlHelpers.CheckCreateDirectory(filePath);
 
             XmlDocument forms = new XmlDocument();
             forms.Load(filePath + "/Forms.xml");
@@ -58,13 +58,27 @@ namespace XML.FormManager.Entity
             forms.Save(filePath + "/Forms.xml");
         }
 
-        public static string getPath(XMLFormType type) {
+        
+    }
+
+    public static class XmlHelpers
+    {
+        public static string getPath(XMLFormType? type, string level)
+        {
             var appDomain = System.AppDomain.CurrentDomain;
             var basePath = appDomain.RelativeSearchPath ?? appDomain.BaseDirectory;
-            return Path.Combine(basePath.Replace("\\bin", ".Entity"), type.ToString());
+            if (type != null)
+            {
+                return Path.Combine(basePath.Replace("\\bin", "." + level), type.ToString());
+            }
+            else
+            {
+                return Path.Combine(basePath.Replace("\\bin", "." + level));
+            }
         }
 
-        public static void CheckCreateDirectory(string path) {
+        public static void CheckCreateDirectory(string path)
+        {
             if (!Directory.Exists(path))
             {
                 Directory.CreateDirectory(path);

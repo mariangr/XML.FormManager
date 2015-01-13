@@ -1,128 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Library xmlns="http://xml.form.manager.bg" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Contracts>
-    <contract contractName="1.10.2015 9.10.42 PM" xmlns="">
-      <contractNumber>654</contractNumber>
+    <contract contractName="1.13.2015 9.35.51 PM" xmlns="">
+      <contractNumber>64</contractNumber>
       <contractDate>654</contractDate>
       <contractDate2>654</contractDate2>
       <community>65</community>
-      <contractEmployer>4</contractEmployer>
-      <contractAddress>654</contractAddress>
+      <contractEmployer>46</contractEmployer>
+      <contractAddress>54</contractAddress>
       <agencyNumber>654</agencyNumber>
-      <contractEmployee>6</contractEmployee>
-      <employeeCity>54</employeeCity>
-      <employeeIDN>654</employeeIDN>
-      <identityCardNumber>6</identityCardNumber>
-      <identityCardCreateDate>46</identityCardCreateDate>
-      <firstSpecialty>54</firstSpecialty>
-      <firstDiplomaNumber>64</firstDiplomaNumber>
-      <firstDiplomaDate>6</firstDiplomaDate>
-      <firstDiplomaCreator>54</firstDiplomaCreator>
-      <secondSpecialty>654</secondSpecialty>
-      <secondDiplomaNumber>65</secondDiplomaNumber>
-      <secondDiplomaDate>4</secondDiplomaDate>
-      <secondDiplomaCreator>654</secondDiplomaCreator>
-      <workExperienceYears>654</workExperienceYears>
-      <workExperienceMonths>6</workExperienceMonths>
-      <workExperienceDays>46</workExperienceDays>
-      <workExperienceYearsWords>54</workExperienceYearsWords>
-      <workExperienceMonthsWords>654</workExperienceMonthsWords>
-      <workExperienceDaysWords>65</workExperienceDaysWords>
-      <workPosition>46</workPosition>
-      <positionCode>54</positionCode>
-      <workPlace>654</workPlace>
-      <workTime>65</workTime>
-      <testTerm>46</testTerm>
-      <payment>54</payment>
-      <paymentWords>6</paymentWords>
-      <dateStartJob>46</dateStartJob>
-    </contract>
-    <contract contractName="1.10.2015 10.42.50 PM" xmlns="">
-      <contractNumber>6546</contractNumber>
-      <contractDate>546</contractDate>
-      <contractDate2>54</contractDate2>
-      <community>654</community>
-      <contractEmployer>65</contractEmployer>
-      <contractAddress>46</contractAddress>
-      <agencyNumber>54</agencyNumber>
-      <contractEmployee>654</contractEmployee>
-      <employeeCity>654</employeeCity>
-      <employeeIDN>654</employeeIDN>
-      <identityCardNumber>654</identityCardNumber>
-      <identityCardCreateDate>654</identityCardCreateDate>
-      <firstSpecialty>65</firstSpecialty>
-      <firstDiplomaNumber>4</firstDiplomaNumber>
-      <firstDiplomaDate>654</firstDiplomaDate>
-      <firstDiplomaCreator>65</firstDiplomaCreator>
-      <secondSpecialty>46</secondSpecialty>
-      <secondDiplomaNumber>54</secondDiplomaNumber>
-      <secondDiplomaDate>654</secondDiplomaDate>
-      <secondDiplomaCreator>654</secondDiplomaCreator>
-      <workExperienceYears>654</workExperienceYears>
-      <workExperienceMonths>6</workExperienceMonths>
-      <workExperienceDays>546</workExperienceDays>
-      <workExperienceYearsWords>54</workExperienceYearsWords>
-      <workExperienceMonthsWords>654</workExperienceMonthsWords>
-      <workExperienceDaysWords>654</workExperienceDaysWords>
-      <workPosition>654</workPosition>
-      <positionCode>65</positionCode>
-      <workPlace>46</workPlace>
-      <workTime>54</workTime>
-      <testTerm>654</testTerm>
-      <payment>654</payment>
-      <paymentWords>65</paymentWords>
-      <dateStartJob>46</dateStartJob>
-    </contract>
-    <contract contractName="1.10.2015 10.43.29 PM" xmlns="">
-      <contractNumber>6546</contractNumber>
-      <contractDate>546</contractDate>
-      <contractDate2>54</contractDate2>
-      <community>654</community>
-      <contractEmployer>654</contractEmployer>
-      <contractAddress>654</contractAddress>
-      <agencyNumber>65</agencyNumber>
-      <contractEmployee>465</contractEmployee>
-      <employeeCity>46</employeeCity>
-      <employeeIDN>54</employeeIDN>
-      <identityCardNumber>654</identityCardNumber>
+      <contractEmployee>65</contractEmployee>
+      <employeeCity>465</employeeCity>
+      <employeeIDN>46</employeeIDN>
+      <identityCardNumber>54</identityCardNumber>
       <identityCardCreateDate>654</identityCardCreateDate>
       <firstSpecialty>65</firstSpecialty>
       <firstDiplomaNumber>465</firstDiplomaNumber>
-      <firstDiplomaDate>4</firstDiplomaDate>
-      <firstDiplomaCreator>654</firstDiplomaCreator>
+      <firstDiplomaDate>46</firstDiplomaDate>
+      <firstDiplomaCreator>54</firstDiplomaCreator>
       <secondSpecialty>654</secondSpecialty>
-      <secondDiplomaNumber>654</secondDiplomaNumber>
-      <secondDiplomaDate>65</secondDiplomaDate>
-      <secondDiplomaCreator>465</secondDiplomaCreator>
-      <workExperienceYears>46</workExperienceYears>
-      <workExperienceMonths>54</workExperienceMonths>
-      <workExperienceDays>654</workExperienceDays>
-      <workExperienceYearsWords>654</workExperienceYearsWords>
+      <secondDiplomaNumber>65</secondDiplomaNumber>
+      <secondDiplomaDate>46</secondDiplomaDate>
+      <secondDiplomaCreator>54</secondDiplomaCreator>
+      <workExperienceYears>654</workExperienceYears>
+      <workExperienceMonths>65</workExperienceMonths>
+      <workExperienceDays>465</workExperienceDays>
+      <workExperienceYearsWords>4</workExperienceYearsWords>
       <workExperienceMonthsWords>654</workExperienceMonthsWords>
       <workExperienceDaysWords>65</workExperienceDaysWords>
       <workPosition>465</workPosition>
       <positionCode>4</positionCode>
       <workPlace>654</workPlace>
       <workTime>654</workTime>
-      <testTerm>654</testTerm>
-      <payment>65</payment>
-      <paymentWords>465</paymentWords>
-      <dateStartJob>46</dateStartJob>
-    </contract>
-    <contract contractName="1.13.2015 12.36.19 AM" xmlns="">
-      <contractNumber>0</contractNumber>
-      <firstDiplomaNumber>0</firstDiplomaNumber>
-      <secondDiplomaNumber>0</secondDiplomaNumber>
-    </contract>
-    <contract contractName="1.13.2015 8.30.04 PM" xmlns="">
-      <contractNumber>0</contractNumber>
-      <firstDiplomaNumber>0</firstDiplomaNumber>
-      <secondDiplomaNumber>0</secondDiplomaNumber>
-    </contract>
-    <contract contractName="1.13.2015 8.41.43 PM" xmlns="">
-      <contractNumber>0</contractNumber>
-      <firstDiplomaNumber>0</firstDiplomaNumber>
-      <secondDiplomaNumber>0</secondDiplomaNumber>
+      <testTerm>65</testTerm>
+      <payment>465</payment>
+      <paymentWords>4</paymentWords>
+      <dateStartJob>65466</dateStartJob>
     </contract>
   </Contracts>
 </Library>

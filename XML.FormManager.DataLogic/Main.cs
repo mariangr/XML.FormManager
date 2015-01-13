@@ -8,6 +8,7 @@ using System.Xml.Serialization;
 using System.Xml.XPath;
 using XML.FormManager.Entity;
 using XML.FormManager.Models;
+using XML.FormManager.Validation;
 
 namespace XML.FormManager.DataLogic
 {
@@ -29,15 +30,15 @@ namespace XML.FormManager.DataLogic
             }
             if (formType.Name == "ContractModel")
             {
-                newDocument.XmlServerSave(DateTime.Now.ToString().Replace(":", ".").Replace("/", "."), XMLFormType.contract);
+                newDocument.ServerValidateAndSave(XMLFormType.contract);
             }
             else if (formType.Name == "InternshipModel")
             {
-                newDocument.XmlServerSave(DateTime.Now.ToString().Replace(":", ".").Replace("/", "."), XMLFormType.internship);
+                newDocument.ServerValidateAndSave(XMLFormType.internship);
             }
             else if (formType.Name == "MentorModel")
             {
-                newDocument.XmlServerSave(DateTime.Now.ToString().Replace(":", ".").Replace("/", "."), XMLFormType.mentor);
+                newDocument.ServerValidateAndSave(XMLFormType.mentor);
             }
         }
 
