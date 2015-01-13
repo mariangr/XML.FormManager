@@ -76,6 +76,9 @@
     <Content Include="mentor\Forms.xml" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="contract\Form.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />

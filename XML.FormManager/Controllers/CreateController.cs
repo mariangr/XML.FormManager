@@ -25,8 +25,13 @@ namespace XML.FormManager.Controllers
         {
             if (ModelState.IsValid)
             {
-                FormsManager.SerialiseAndSaveForm(model);
-                return new HttpStatusCodeResult(HttpStatusCode.OK);
+                if (FormsManager.SerialiseAndSaveForm(model))
+                {
+                    return new HttpStatusCodeResult(HttpStatusCode.OK);
+                }
+                else {
+                    return new HttpStatusCodeResult(HttpStatusCode.NotAcceptable);
+                }
             }
             else
             {
@@ -38,8 +43,14 @@ namespace XML.FormManager.Controllers
         public ActionResult NewInternship(InternshipModel model) {
             if (ModelState.IsValid)
             {
-                FormsManager.SerialiseAndSaveForm(model);
-                return new HttpStatusCodeResult(HttpStatusCode.OK);
+                if (FormsManager.SerialiseAndSaveForm(model))
+                {
+                    return new HttpStatusCodeResult(HttpStatusCode.OK);
+                }
+                else
+                {
+                    return new HttpStatusCodeResult(HttpStatusCode.NotAcceptable);
+                }
             }
             else
             {
@@ -52,8 +63,14 @@ namespace XML.FormManager.Controllers
         {
             if (ModelState.IsValid)
             {
-                FormsManager.SerialiseAndSaveForm(model);
-                return new HttpStatusCodeResult(HttpStatusCode.OK);
+                if (FormsManager.SerialiseAndSaveForm(model))
+                {
+                    return new HttpStatusCodeResult(HttpStatusCode.OK);
+                }
+                else
+                {
+                    return new HttpStatusCodeResult(HttpStatusCode.NotAcceptable);
+                }
             }
             else
             {
