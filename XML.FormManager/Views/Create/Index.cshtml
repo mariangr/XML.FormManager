@@ -4,10 +4,16 @@
 
 <style>
     .innerText {
-        font-size:9.0pt;
-        font-family:"Arial CYR",sans-serif;
-        color:#080000;
+        font-size: 9.0pt;
+        font-family: "Arial CYR",sans-serif;
+        color: #080000;
     }
+
+    input[type=date] {
+        line-height: 19px;
+    }
+
+
 </style>
 
 <p>
@@ -42,7 +48,7 @@
 
         <p align=center style='text-align:center;'>
             <span class="innerText">
-                №<input type="text" id="contractNumber"/>/ Дата: <input type="text" id="contractDate" /> г.
+                №<input type="text" id="contractNumber"/>/ Дата: <input type="date" id="contractDate" style="line-height: 17px" /> г.
             </span>
         </p>
 
@@ -54,7 +60,7 @@
 
         <p>
             <span class="innerText">
-                Днес,  <input type="text" id="contractDate2" />г . , в гр. София, община <input type="text" id="community" />., се сключи настоящият трудов договор между:
+                Днес,  <input type="date" id="contractDate2" style="line-height: 17px" />г . , в гр. София, община <input type="text" id="community" />., се сключи настоящият трудов договор между:
             </span>
         </p>
 
@@ -84,7 +90,7 @@
 
         <p>
             <span class="innerText">
-                с адрес:  гр <input type="text" id="employeeCity" /> ЕГН <input type="text" id="employeeIDN" />, л.к. <input type="text" id="identityCardNumber" /> , изд. на <input type="text" id="identityCardCreateDate" />
+                с адрес:  гр <input type="text" id="employeeCity" /> ЕГН <input type="text" id="employeeIDN" />, л.к. <input type="text" id="identityCardNumber" /> , изд. на <input type="date" id="identityCardCreateDate" />
             </span>
         </p>
 
@@ -96,7 +102,7 @@
 
         <p>
             <span class="innerText">
-                Диплома № <input type="text" id="firstDiplomaNumber" /> / <input type="text" id="firstDiplomaDate" /> г. от<input type="text" id="firstDiplomaCreator" />
+                Диплома № <input type="text" id="firstDiplomaNumber" /> / <input type="date" id="firstDiplomaDate" /> г. от<input type="text" id="firstDiplomaCreator" />
             </span>
         </p>
 
@@ -108,7 +114,7 @@
 
         <p class=MsoNormal>
             <span class="innerText">
-                Диплома № - <input type="text" id="secondDiplomaNumber" /> / <input type="text" id="secondDiplomaDate" /> г, от <input type="text" id="secondDiplomaCreator" />,
+                Диплома № - <input type="text" id="secondDiplomaNumber" /> / <input type="date" id="secondDiplomaDate" /> г, от <input type="text" id="secondDiplomaCreator" />,
             </span>
         </p>
 
@@ -261,7 +267,7 @@
 
         <p>
             <span class="innerText">
-                Служителят постъпи на работа на: <input type="text" id="dateStartJob" />
+                Служителят постъпи на работа на: <input type="date" id="dateStartJob" />
             </span>
         </p>
 

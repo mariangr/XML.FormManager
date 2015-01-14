@@ -23,6 +23,7 @@ namespace XML.FormManager.Controllers
         [HttpPost]
         public ActionResult NewContract(ContractModel model)
         {
+            var errors = ModelState.Values.SelectMany(v => v.Errors);
             if (ModelState.IsValid)
             {
                 if (FormsManager.SerialiseAndSaveForm(model))

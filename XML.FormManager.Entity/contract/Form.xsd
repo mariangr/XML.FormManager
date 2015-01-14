@@ -24,43 +24,137 @@
   <xs:element name="contract">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="contractNumber" type="xs:integer" />
-        <xs:element name="contractDate" type="xs:string" />
-        <xs:element name="contractDate2" type="xs:string" />
-        <xs:element name="community" type="xs:string" />
+        <xs:element name="contractNumber">
+          <xs:simpleType>
+            <xs:restriction base="xs:integer">
+              <xs:minInclusive value="0"></xs:minInclusive>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="contractDate" maxOccurs="1">
+          <xs:simpleType>
+            <xs:restriction base="xs:dateTime">
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="contractDate2" maxOccurs="1">
+          <xs:simpleType>
+            <xs:restriction base="xs:dateTime">
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="community" type="xs:string" maxOccurs="1"/>
         <xs:element name="contractEmployer" type="xs:string" />
         <xs:element name="contractAddress" type="xs:string" />
-        <xs:element name="agencyNumber" type="xs:string" />
+        <xs:element name="agencyNumber" type="xs:integer" />
         <xs:element name="contractEmployee" type="xs:string" />
         <xs:element name="employeeCity" type="xs:string" />
-        <xs:element name="employeeIDN" type="xs:string" />
-        <xs:element name="identityCardNumber" type="xs:string" />
-        <xs:element name="identityCardCreateDate" type="xs:string" />
+        <xs:element name="employeeIDN">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="[0-9]{10}"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="identityCardNumber">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="[0-9]{9}"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="identityCardCreateDate">
+          <xs:simpleType>
+            <xs:restriction base="xs:dateTime">
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
         <xs:element name="firstSpecialty" type="xs:string" />
-        <xs:element name="firstDiplomaNumber" type="xs:string" />
-        <xs:element name="firstDiplomaDate" type="xs:string" />
+        <xs:element name="firstDiplomaNumber">
+          <xs:simpleType>
+            <xs:restriction base="xs:integer">
+              <xs:minInclusive value="0"></xs:minInclusive>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="firstDiplomaDate">
+          <xs:simpleType>
+            <xs:restriction base="xs:dateTime">
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
         <xs:element name="firstDiplomaCreator" type="xs:string" />
         <xs:element name="secondSpecialty" type="xs:string" />
-        <xs:element name="secondDiplomaNumber" type="xs:string" />
-        <xs:element name="secondDiplomaDate" type="xs:string" />
+        <xs:element name="secondDiplomaNumber">
+          <xs:simpleType>
+            <xs:restriction base="xs:integer">
+              <xs:minInclusive value="0"></xs:minInclusive>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="secondDiplomaDate">
+          <xs:simpleType>
+            <xs:restriction base="xs:dateTime">
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
         <xs:element name="secondDiplomaCreator" type="xs:string" />
-        <xs:element name="workExperienceYears" type="xs:string" />
-        <xs:element name="workExperienceMonths" type="xs:string" />
-        <xs:element name="workExperienceDays" type="xs:string" />
+        <xs:element name="workExperienceYears">
+          <xs:simpleType>
+            <xs:restriction base="xs:integer">
+              <xs:minInclusive value="0"></xs:minInclusive>
+              <xs:maxInclusive value="80"></xs:maxInclusive>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="workExperienceMonths">
+          <xs:simpleType>
+            <xs:restriction base="xs:short">
+              <xs:minInclusive value="0"></xs:minInclusive>
+              <xs:maxInclusive value="12"></xs:maxInclusive>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="workExperienceDays">
+          <xs:simpleType>
+            <xs:restriction base="xs:short">
+              <xs:minInclusive value="0"></xs:minInclusive>
+              <xs:maxInclusive value="31"></xs:maxInclusive>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
         <xs:element name="workExperienceYearsWords" type="xs:string" />
         <xs:element name="workExperienceMonthsWords" type="xs:string" />
         <xs:element name="workExperienceDaysWords" type="xs:string" />
         <xs:element name="workPosition" type="xs:string" />
         <xs:element name="positionCode" type="xs:string" />
         <xs:element name="workPlace" type="xs:string" />
-        <xs:element name="workTime" type="xs:string" />
+        <xs:element name="workTime">
+          <xs:simpleType>
+            <xs:restriction base="xs:short">
+              <xs:minInclusive value="0"></xs:minInclusive>
+              <xs:maxInclusive value="24"></xs:maxInclusive>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
         <xs:element name="testTerm" type="xs:string" />
-        <xs:element name="payment" type="xs:string" />
+        <xs:element name="payment">
+          <xs:simpleType>
+            <xs:restriction base="xs:integer">
+              <xs:minInclusive value="0"></xs:minInclusive>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
         <xs:element name="paymentWords" type="xs:string" />
-        <xs:element name="dateStartJob" type="xs:string" />
+        <xs:element name="dateStartJob">
+          <xs:simpleType>
+            <xs:restriction base="xs:dateTime">
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
       </xs:sequence>
       <xs:attribute name="contractName" type="xs:string" use="optional" />
-      
     </xs:complexType>
   </xs:element>
+  
 </xs:schema>
