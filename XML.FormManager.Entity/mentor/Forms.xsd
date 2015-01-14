@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://xml.form.manager.bg" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import />
+  <xs:element name="Library">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Mentors">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="mentor" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="mentor">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="mentorNumber" type="xs:integer">
+                <xs:simpleType>
+                  <xs:restriction base="xs:integer">
+                    <xs:minInclusive value="0"/>
+                    <xs:maxInclusive value="100000"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="mentorDay">
+              <xs:simpleType>
+                <xs:restriction base="xs:integer">
+                  <xs:minLength value="1"/>
+                  <xs:maxLength value="2"/>
+                  <xs:minInclusive value="1"/>
+                  <xs:maxInclusive value="31"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+              <xs:element name="mentorMonth">
+                <xs:simpleType>
+                  <xs:restriction base="xs:integer">
+                    <xs:minLength value="1"/>
+                    <xs:maxLength value="2"/>
+                    <xs:minInclusive value="1"/>
+                    <xs:maxInclusive value="12"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="mentorYear">
+              <xs:simpleType>
+                <xs:restriction base="xs:integer">
+                  <xs:minLength value="1"/>
+                  <xs:maxLength value="4"/>
+                  <xs:minInclusive value="0"/>
+                  <xs:maxInclusive value="3000"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+              <xs:element name="mentorFirstName" type="xs:string" />
+              <xs:element name="mentorMiddleName" type="xs:string" />
+              <xs:element name="mentorLastName" type="xs:string" />
+              <xs:element name="mentorOrganization" type="xs:string" />
+              <xs:element name="mentorFirstNameStudent" type="xs:string" />
+              <xs:element name="mentorMiddleNameStudent" type="xs:string" />
+              <xs:element name="mentorLastNameStudent" type="xs:string" />
+              <xs:element name="mentorStudentDay">
+              <xs:simpleType>
+                <xs:restriction base="xs:integer">
+                  <xs:minLength value="1"/>
+                  <xs:maxLength value="2"/>
+                  <xs:minInclusive value="1"/>
+                  <xs:maxInclusive value="31"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+              <xs:element name="mentorStudentMonth">
+              <xs:simpleType>
+                <xs:restriction base="xs:integer">
+                  <xs:minLength value="1"/>
+                  <xs:maxLength value="2"/>
+                  <xs:minInclusive value="1"/>
+                  <xs:maxInclusive value="12"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+              <xs:element name="mentorStudentYear">
+              <xs:simpleType>
+                <xs:restriction base="xs:integer">
+                  <xs:minLength value="1"/>
+                  <xs:maxLength value="4"/>
+                  <xs:minInclusive value="2015"/>
+                  <xs:maxInclusive value="3000"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+              <xs:element name="mentorStudentArrivalHour">
+              <xs:simpleType>
+                <xs:restriction base="xs:integer">
+                  <xs:minLength value="1"/>
+                  <xs:maxLength value="2"/>
+                  <xs:minInclusive value="0"/>
+                  <xs:maxInclusive value="24"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+              <xs:element name="mentorStudentArrivalMinutes">
+              <xs:simpleType>
+                <xs:restriction base="xs:integer">
+                  <xs:minLength value="1"/>
+                  <xs:maxLength value="2"/>
+                  <xs:minInclusive value="0"/>
+                  <xs:maxInclusive value="60"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+              <xs:element name="mentorStudentLeavingHour">
+              <xs:simpleType>
+                <xs:restriction base="xs:integer">
+                  <xs:minLength value="1"/>
+                  <xs:maxLength value="2"/>
+                  <xs:minInclusive value="0"/>
+                  <xs:maxInclusive value="24"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+              <xs:element name="mentorStudentLeavingMinutes">
+              <xs:simpleType>
+                <xs:restriction base="xs:integer">
+                  <xs:minLength value="1"/>
+                  <xs:maxLength value="2"/>
+                  <xs:minInclusive value="0"/>
+                  <xs:maxInclusive value="60"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+              <xs:element name="mentorStudentDescription">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value = "1000"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="mentorStudentRating">
+                <xs:simpleType>
+                  <xs:restriction base="xs:integer">
+                    <xs:minLength value="1"/>
+                    <xs:maxLength value="2"/>
+                    <xs:minInclusive value="1"/>
+                    <xs:maxInclusive value="10"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="mentorName" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
