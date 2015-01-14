@@ -11,7 +11,7 @@ using System.Text.RegularExpressions;
 
 namespace XML.FormManager.Entity
 {
-    public enum XMLFormType {contract, mentor, internship};
+    public enum XMLFormType { contract, internship, mentor };
 
 
 

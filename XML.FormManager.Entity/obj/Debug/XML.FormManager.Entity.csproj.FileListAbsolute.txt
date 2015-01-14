@@ -35,7 +35,6 @@ C:\Users\Didi\Documents\GitHub\XML.FormManager\XML.FormManager.Entity\bin\Debug\
 C:\Users\Didi\Documents\GitHub\XML.FormManager\XML.FormManager.Entity\bin\Debug\System.Web.WebPages.xml
 C:\Users\Didi\Documents\GitHub\XML.FormManager\XML.FormManager.Entity\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\Didi\Documents\GitHub\XML.FormManager\XML.FormManager.Entity\bin\Debug\System.Web.WebPages.Razor.xml
-C:\Users\Didi\Documents\GitHub\XML.FormManager\XML.FormManager.Entity\obj\Debug\XML.FormManager.Entity.csprojResolveAssemblyReference.cache
 C:\Users\Didi\Documents\GitHub\XML.FormManager\XML.FormManager.Entity\obj\Debug\XML.FormManager.Entity.dll
 C:\Users\Didi\Documents\GitHub\XML.FormManager\XML.FormManager.Entity\obj\Debug\XML.FormManager.Entity.pdb
 C:\Users\Public\XML.FormManager\XML.FormManager\XML.FormManager.Entity\bin\Debug\XML.FormManager.Entity.dll
@@ -57,3 +56,4 @@ C:\Users\Public\XML.FormManager\XML.FormManager\XML.FormManager.Entity\obj\Debug
 C:\Users\Public\XML.FormManager\XML.FormManager\XML.FormManager.Entity\obj\Debug\XML.FormManager.Entity.dll
 C:\Users\Public\XML.FormManager\XML.FormManager\XML.FormManager.Entity\obj\Debug\XML.FormManager.Entity.pdb
 C:\Users\Marian\Documents\Github\XML.FormManager\XML.FormManager.Entity\obj\Debug\XML.FormManager.Entity.csprojResolveAssemblyReference.cache
+C:\Users\Didi\Documents\GitHub\XML.FormManager\XML.FormManager.Entity\obj\Debug\XML.FormManager.Entity.csprojResolveAssemblyReference.cache

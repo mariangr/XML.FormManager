@@ -79,6 +79,9 @@
     <None Include="contract\Form.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="internship\Form.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="mentor\Form.xsd">
       <SubType>Designer</SubType>
     </None>
