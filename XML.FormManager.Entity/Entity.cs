@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Schema;
+using System.Xml.Linq;
+using System.Text.RegularExpressions;
 
 namespace XML.FormManager.Entity
 {
@@ -45,22 +47,25 @@ namespace XML.FormManager.Entity
             XmlNode appendNode = forms.ChildNodes[1].FirstChild;
 
             XmlNodeList objectElements = newDocument.ChildNodes[0].ChildNodes;
-            XmlElement document = forms.CreateElement(type.ToString());
+            XmlElement document = forms.CreateElement(type.ToString(), "http://xml.form.manager.bg");
             foreach (var item in objectElements)
             {
-                document.AppendChild(document.OwnerDocument.ImportNode(item as XmlNode, true));
+                XmlNode node = document.OwnerDocument.ImportNode(item as XmlNode, true);
+                document.AppendChild(node);
             }
+            foreach (XmlNode node in document.ChildNodes)
+            {
+            }
+            appendNode.AppendChild(document);
+            
 
             XmlAttribute attr = forms.CreateAttribute(type.ToString() + "Name");
             attr.Value = fileName.ToString();
             document.Attributes.Append(attr);
 
-            document.Attributes.RemoveNamedItem("xmlns");
-            appendNode.AppendChild(document);
-
             try
             {
-                //XmlHelpers.Validate(forms, type);
+                XmlHelpers.Validate(forms, type);
             }
             catch (InvalidOperationException ioe)
             {
@@ -70,6 +75,28 @@ namespace XML.FormManager.Entity
             forms.Save(filePath + "/Forms.xml");
             return true;
         }
+
+        public static XmlDocument ToXmlDocument(this XDocument xDocument)
+        {
+            var xmlDocument = new XmlDocument();
+            using (var reader = xDocument.CreateReader())
+            {
+                xmlDocument.Load(reader);
+            }
+
+            var xDeclaration = xDocument.Declaration;
+            if (xDeclaration != null)
+            {
+                var xmlDeclaration = xmlDocument.CreateXmlDeclaration(
+                    xDeclaration.Version,
+                    xDeclaration.Encoding,
+                    xDeclaration.Standalone);
+
+                xmlDocument.InsertBefore(xmlDeclaration, xmlDocument.FirstChild);
+            }
+
+            return xmlDocument;
+        } 
 
         
     }

@@ -21,7 +21,7 @@ namespace XML.FormManager.DataLogic
         {
             var formType = form.GetType();
 
-            XmlSerializer serializer = new XmlSerializer(formType);
+            XmlSerializer serializer = new XmlSerializer(formType, "http://xml.form.manager.bg");
             XmlDocument newDocument = new XmlDocument();
             XPathNavigator xNav = newDocument.CreateNavigator();
             using (var xs = xNav.AppendChild())

@@ -60,6 +60,7 @@
         <xs:element name="dateStartJob" type="xs:string" />
       </xs:sequence>
       <xs:attribute name="contractName" type="xs:string" use="optional" />
+      
     </xs:complexType>
   </xs:element>
 </xs:schema>
