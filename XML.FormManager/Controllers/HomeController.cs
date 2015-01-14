@@ -17,5 +17,21 @@ namespace XML.FormManager.Controllers
             var model = FormsManager.GetAllDocs();
             return View(model);
         }
+
+        public ActionResult Contracts()
+        {
+            return Content(FormsManager.GetDoc("contract"), "text/xml");
+        }
+
+        public ActionResult Internships()
+        {
+            return Content(FormsManager.GetDoc("internship"), "text/xml");
+        }
+
+        public ActionResult Mentors()
+        {
+            return Content(FormsManager.GetDoc("mentor"), "text/xml");
+        }
 	}
+
 }

@@ -32,9 +32,11 @@ namespace XML.FormManager.Entity
             return result.ToArray();
         }
 
-        public static XmlDocument XmlGet(string name, XMLFormType type) {
+        public static XmlDocument XmlGet(XMLFormType type) 
+        {
+            var filePath = XmlHelpers.getPath(type, "Entity");
             var loadedXml = new XmlDocument();
-            loadedXml.Load(type + "/" + name);
+            loadedXml.Load(filePath + "/Forms.xml");
             return loadedXml;
         }
 
@@ -69,7 +71,7 @@ namespace XML.FormManager.Entity
             }
             catch (InvalidOperationException ioe)
             {
-                return false;
+                throw;
             }
 
             forms.Save(filePath + "/Forms.xml");

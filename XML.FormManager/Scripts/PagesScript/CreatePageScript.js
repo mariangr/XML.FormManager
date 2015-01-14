@@ -68,7 +68,7 @@ CreateModule.Requests = function () {
                 window.location = "/Home/AllDocs"
             },
             error: function (result) {
-                alert(result.status);
+                alert(result.statusText);
             }
         })
     }

@@ -26,12 +26,20 @@ namespace XML.FormManager.Controllers
             var errors = ModelState.Values.SelectMany(v => v.Errors);
             if (ModelState.IsValid)
             {
-                if (FormsManager.SerialiseAndSaveForm(model))
+                try
                 {
-                    return new HttpStatusCodeResult(HttpStatusCode.OK);
+                    if (FormsManager.SerialiseAndSaveForm(model))
+                    {
+                        return new HttpStatusCodeResult(HttpStatusCode.OK);
+                    }
+                    else
+                    {
+                        return new HttpStatusCodeResult(HttpStatusCode.NotAcceptable);
+                    }
                 }
-                else {
-                    return new HttpStatusCodeResult(HttpStatusCode.NotAcceptable);
+                catch (InvalidOperationException ioe)
+                {
+                    return new HttpStatusCodeResult(HttpStatusCode.NotAcceptable, ioe.Message);
                 }
             }
             else

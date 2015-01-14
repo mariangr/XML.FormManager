@@ -73,5 +73,24 @@ namespace XML.FormManager.DataLogic
 
             return result;
         }
+
+        public static string GetDoc(string type) {
+            if (type == "contract")
+            {
+                return XmlCustomEntity.XmlGet(XMLFormType.contract).InnerXml;
+            }
+            if (type == "internship")
+            {
+                return XmlCustomEntity.XmlGet(XMLFormType.internship).InnerXml;
+            }
+            if (type == "mentor")
+            {
+                return XmlCustomEntity.XmlGet(XMLFormType.mentor).InnerXml;
+            }
+            else
+            {
+                return String.Empty;
+            }
+        }
     }
 }
