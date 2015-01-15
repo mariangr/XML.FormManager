@@ -1,0 +1,87 @@
+C:\Users\Marian\documents\visual studio 2013\Projects\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\XML.FormManager.DataLogic.dll
+C:\Users\Marian\documents\visual studio 2013\Projects\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\XML.FormManager.DataLogic.pdb
+C:\Users\Marian\documents\visual studio 2013\Projects\XML.FormManager\XML.FormManager.DataLogic\obj\Debug\XML.FormManager.DataLogic.csprojResolveAssemblyReference.cache
+C:\Users\Marian\documents\visual studio 2013\Projects\XML.FormManager\XML.FormManager.DataLogic\obj\Debug\XML.FormManager.DataLogic.dll
+C:\Users\Marian\documents\visual studio 2013\Projects\XML.FormManager\XML.FormManager.DataLogic\obj\Debug\XML.FormManager.DataLogic.pdb
+C:\Users\Marian\documents\visual studio 2013\Projects\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\XML.FormManager.Entity.dll
+C:\Users\Marian\documents\visual studio 2013\Projects\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\XML.FormManager.Entity.pdb
+C:\Users\Marian\Documents\Github\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\XML.FormManager.DataLogic.dll
+C:\Users\Marian\Documents\Github\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\XML.FormManager.DataLogic.pdb
+C:\Users\Marian\Documents\Github\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Marian\Documents\Github\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.Helpers.dll
+C:\Users\Marian\Documents\Github\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.Mvc.dll
+C:\Users\Marian\Documents\Github\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.Razor.dll
+C:\Users\Marian\Documents\Github\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Marian\Documents\Github\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.WebPages.dll
+C:\Users\Marian\Documents\Github\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Marian\Documents\Github\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\XML.FormManager.Entity.dll
+C:\Users\Marian\Documents\Github\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\XML.FormManager.Entity.pdb
+C:\Users\Marian\Documents\Github\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.Helpers.xml
+C:\Users\Marian\Documents\Github\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.Mvc.xml
+C:\Users\Marian\Documents\Github\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.Razor.xml
+C:\Users\Marian\Documents\Github\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.WebPages.xml
+C:\Users\Marian\Documents\Github\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Marian\Documents\Github\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Marian\Documents\Github\XML.FormManager\XML.FormManager.DataLogic\obj\Debug\XML.FormManager.DataLogic.csprojResolveAssemblyReference.cache
+C:\Users\Marian\Documents\Github\XML.FormManager\XML.FormManager.DataLogic\obj\Debug\XML.FormManager.DataLogic.dll
+C:\Users\Marian\Documents\Github\XML.FormManager\XML.FormManager.DataLogic\obj\Debug\XML.FormManager.DataLogic.pdb
+C:\Users\Didi\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\XML.FormManager.DataLogic.dll
+C:\Users\Didi\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\XML.FormManager.DataLogic.pdb
+C:\Users\Didi\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Didi\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.Helpers.dll
+C:\Users\Didi\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.Mvc.dll
+C:\Users\Didi\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.Razor.dll
+C:\Users\Didi\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Didi\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.WebPages.dll
+C:\Users\Didi\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Didi\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\XML.FormManager.Entity.dll
+C:\Users\Didi\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\XML.FormManager.Entity.pdb
+C:\Users\Didi\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.Helpers.xml
+C:\Users\Didi\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.Mvc.xml
+C:\Users\Didi\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.Razor.xml
+C:\Users\Didi\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.WebPages.xml
+C:\Users\Didi\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Didi\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Didi\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\obj\Debug\XML.FormManager.DataLogic.csprojResolveAssemblyReference.cache
+C:\Users\Didi\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\obj\Debug\XML.FormManager.DataLogic.dll
+C:\Users\Didi\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\obj\Debug\XML.FormManager.DataLogic.pdb
+C:\Users\Public\XML.FormManager\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\XML.FormManager.DataLogic.dll
+C:\Users\Public\XML.FormManager\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\XML.FormManager.DataLogic.pdb
+C:\Users\Public\XML.FormManager\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Public\XML.FormManager\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.Helpers.dll
+C:\Users\Public\XML.FormManager\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.Mvc.dll
+C:\Users\Public\XML.FormManager\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.Razor.dll
+C:\Users\Public\XML.FormManager\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Public\XML.FormManager\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.WebPages.dll
+C:\Users\Public\XML.FormManager\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Public\XML.FormManager\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\XML.FormManager.Entity.dll
+C:\Users\Public\XML.FormManager\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\XML.FormManager.Entity.pdb
+C:\Users\Public\XML.FormManager\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.Helpers.xml
+C:\Users\Public\XML.FormManager\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.Mvc.xml
+C:\Users\Public\XML.FormManager\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.Razor.xml
+C:\Users\Public\XML.FormManager\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.WebPages.xml
+C:\Users\Public\XML.FormManager\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Public\XML.FormManager\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Public\XML.FormManager\XML.FormManager\XML.FormManager.DataLogic\obj\Debug\XML.FormManager.DataLogic.csprojResolveAssemblyReference.cache
+C:\Users\Public\XML.FormManager\XML.FormManager\XML.FormManager.DataLogic\obj\Debug\XML.FormManager.DataLogic.dll
+C:\Users\Public\XML.FormManager\XML.FormManager\XML.FormManager.DataLogic\obj\Debug\XML.FormManager.DataLogic.pdb
+C:\Users\marian.graurov\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\XML.FormManager.DataLogic.dll
+C:\Users\marian.graurov\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\XML.FormManager.DataLogic.pdb
+C:\Users\marian.graurov\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\marian.graurov\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.Helpers.dll
+C:\Users\marian.graurov\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.Mvc.dll
+C:\Users\marian.graurov\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.Razor.dll
+C:\Users\marian.graurov\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\marian.graurov\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.WebPages.dll
+C:\Users\marian.graurov\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\marian.graurov\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\XML.FormManager.Entity.dll
+C:\Users\marian.graurov\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\XML.FormManager.Entity.pdb
+C:\Users\marian.graurov\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.Helpers.xml
+C:\Users\marian.graurov\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.Mvc.xml
+C:\Users\marian.graurov\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.Razor.xml
+C:\Users\marian.graurov\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.WebPages.xml
+C:\Users\marian.graurov\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\marian.graurov\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\marian.graurov\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\obj\Debug\XML.FormManager.DataLogic.csprojResolveAssemblyReference.cache
+C:\Users\marian.graurov\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\obj\Debug\XML.FormManager.DataLogic.dll
+C:\Users\marian.graurov\Documents\GitHub\XML.FormManager\XML.FormManager.DataLogic\obj\Debug\XML.FormManager.DataLogic.pdb
