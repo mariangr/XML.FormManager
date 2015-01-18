@@ -50,43 +50,59 @@ namespace XML.FormManager.Controllers
 
         [HttpPost]
         public ActionResult NewInternship(InternshipModel model) {
+            var errors = ModelState.Values.SelectMany(v => v.Errors);
             if (ModelState.IsValid)
             {
-                if (FormsManager.SerialiseAndSaveForm(model))
+                try
                 {
-                    return new HttpStatusCodeResult(HttpStatusCode.OK);
+                    if (FormsManager.SerialiseAndSaveForm(model))
+                    {
+                        return new HttpStatusCodeResult(HttpStatusCode.OK);
+                    }
+                    else
+                    {
+                        return new HttpStatusCodeResult(HttpStatusCode.NotAcceptable);
+                    }
                 }
-                else
+                catch (InvalidOperationException ioe)
                 {
-                    return new HttpStatusCodeResult(HttpStatusCode.NotAcceptable);
+                    return new HttpStatusCodeResult(HttpStatusCode.NotAcceptable, ioe.Message);
                 }
             }
             else
             {
                 return new HttpStatusCodeResult(HttpStatusCode.NotAcceptable);
             }
-
         }
+
         [HttpPost]
         public ActionResult NewMentor(MentorModel model)
         {
+            var errors = ModelState.Values.SelectMany(v => v.Errors);
             if (ModelState.IsValid)
             {
-                if (FormsManager.SerialiseAndSaveForm(model))
+                try
                 {
-                    return new HttpStatusCodeResult(HttpStatusCode.OK);
+                    if (FormsManager.SerialiseAndSaveForm(model))
+                    {
+                        return new HttpStatusCodeResult(HttpStatusCode.OK);
+                    }
+                    else
+                    {
+                        return new HttpStatusCodeResult(HttpStatusCode.NotAcceptable);
+                    }
                 }
-                else
+                catch (InvalidOperationException ioe)
                 {
-                    return new HttpStatusCodeResult(HttpStatusCode.NotAcceptable);
+                    return new HttpStatusCodeResult(HttpStatusCode.NotAcceptable, ioe.Message);
                 }
             }
             else
             {
                 return new HttpStatusCodeResult(HttpStatusCode.NotAcceptable);
             }
-
         }
+
         public ActionResult GetPartialView(string name) {
             return PartialView(name);
         }

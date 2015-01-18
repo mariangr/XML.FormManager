@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://xml.form.manager.bg"
+    elementFormDefault="qualified"
+    xmlns="http://xml.form.manager.bg"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+  <xs:element name="Library">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Internships" maxOccurs="1"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name ="Internships">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="internship" maxOccurs="unbounded"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="internship">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="internshipNumber">
+          <xs:simpleType>
+            <xs:restriction base="xs:integer">
+              <xs:minInclusive value="0"></xs:minInclusive>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="internshipDate" maxOccurs="1">
+          <xs:simpleType>
+            <xs:restriction base="xs:dateTime">
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="internshipCompany" type="xs:string" />
+        <xs:element name="internshipCompanyTown" type="xs:string" />
+        <xs:element name="internshipCompanyNumber">
+          <xs:simpleType>
+            <xs:restriction base="xs:integer">
+              <xs:minInclusive value="0"></xs:minInclusive>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="internshipCompanyBulstat">
+          <xs:simpleType>
+            <xs:restriction base="xs:integer">
+              <xs:minInclusive value="0"></xs:minInclusive>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="internshipCompanyLeaderName" type="xs:string" />
+        <xs:element name="internshipCompanyLeaderEgn">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="[0-9]{2}[0,1,4,5][1-9]{7}"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="internshipStudentName" type="xs:string" />
+        <xs:element name="internshipStudentEgn">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="[0-9]{2}[0,1,4,5][1-9]{7}"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="internshipStudentLK">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="[0-9]{9}"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="internshipStudentLKMVR" type="xs:string" />
+        <xs:element name="internshipStudentLKDate" maxOccurs="1">
+          <xs:simpleType>
+            <xs:restriction base="xs:dateTime">
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="internshipStudentAddressTown" type="xs:string" />
+        <xs:element name="internshipStudentAddressStreet" type="xs:string" />
+        <xs:element name="internshipStudentAddressStreetNumber">
+          <xs:simpleType>
+            <xs:restriction base="xs:integer">
+              <xs:minInclusive value="1"></xs:minInclusive>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="internshipStudentTelephoneNumber">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="[0][0-9]{9}"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="internshipStudentUniversity" type="xs:string" />
+        <xs:element name="internshipStudentUniversityTown" type="xs:string" />
+        <xs:element name="internshipStudentCourse">
+          <xs:simpleType>
+            <xs:restriction base="xs:integer">
+              <xs:minInclusive value="1"></xs:minInclusive>
+              <xs:maxInclusive value="5"></xs:maxInclusive>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="internshipStudentGrade" type="xs:string" />
+        <xs:element name="internshipStudentFaculty" type="xs:string" />
+        <xs:element name="internshipStudentNumber">
+          <xs:simpleType>
+            <xs:restriction base="xs:integer">
+              <xs:minInclusive value="1"></xs:minInclusive>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="internshipTitle" type="xs:string" />
+        <xs:element name="internshipTasks" type="xs:string" />
+        <xs:element name="internshipMentorName" type="xs:string" />
+        <xs:element name="internshipMentorPosition" type="xs:string" />
+        <xs:element name="internshipAcquiredSkills" type="xs:string" />
+        <xs:element name="internshipRecommendations" type="xs:string" />
+        <xs:element name="internshipAppraisalWord" type="xs:string" />
+        <xs:element name="internshipAppraisal">
+          <xs:simpleType>
+            <xs:restriction base="xs:integer">
+              <xs:minInclusive value="2"></xs:minInclusive>
+              <xs:maxInclusive value="6"></xs:maxInclusive>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="internshipCurrentDate" maxOccurs="1">
+          <xs:simpleType>
+            <xs:restriction base="xs:dateTime">
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="internshipCurrentTown" type="xs:string" />
+       </xs:sequence>
+      <xs:attribute name="internshipName" type="xs:string" use="optional" />
+    </xs:complexType>
+  </xs:element>
+  
+</xs:schema>

@@ -11,7 +11,7 @@ using System.Text.RegularExpressions;
 
 namespace XML.FormManager.Entity
 {
-    public enum XMLFormType {contract, mentor, internship};
+    public enum XMLFormType { contract, internship, mentor };
 
 
 
@@ -65,15 +65,8 @@ namespace XML.FormManager.Entity
             attr.Value = fileName.ToString();
             document.Attributes.Append(attr);
 
-            try
-            {
-                XmlHelpers.Validate(forms, type);
-            }
-            catch (InvalidOperationException ioe)
-            {
-                throw;
-            }
-
+            XmlHelpers.Validate(forms, type);
+            
             forms.Save(filePath + "/Forms.xml");
             return true;
         }

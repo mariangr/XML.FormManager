@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Library xmlns="http://xml.form.manager.bg" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<<<<<<< HEAD
   <Contracts>
     <contract contractName="1/14/2015 12:38:09 PM">
       <contractNumber>234</contractNumber>
@@ -72,6 +73,44 @@
       <payment>5</payment>
       <paymentWords>5</paymentWords>
       <dateStartJob>2015-01-21T00:00:00</dateStartJob>
+=======
+  <Contracts xmlns="http://xml.form.manager.bg">
+    <contract contractName="1/15/2015 10:13:20 AM">
+      <contractNumber>3456</contractNumber>
+      <contractDate>2015-01-16T00:00:00</contractDate>
+      <contractDate2>2015-01-16T00:00:00</contractDate2>
+      <community>345</community>
+      <contractEmployer>345</contractEmployer>
+      <contractAddress>345</contractAddress>
+      <agencyNumber>345</agencyNumber>
+      <contractEmployee>35</contractEmployee>
+      <employeeCity>345</employeeCity>
+      <employeeIDN>3453453455</employeeIDN>
+      <identityCardNumber>353453455</identityCardNumber>
+      <identityCardCreateDate>2015-01-14T00:00:00</identityCardCreateDate>
+      <firstSpecialty>345</firstSpecialty>
+      <firstDiplomaNumber>345</firstDiplomaNumber>
+      <firstDiplomaDate>2015-01-16T00:00:00</firstDiplomaDate>
+      <firstDiplomaCreator>345</firstDiplomaCreator>
+      <secondSpecialty>345</secondSpecialty>
+      <secondDiplomaNumber>345</secondDiplomaNumber>
+      <secondDiplomaDate>2015-01-14T00:00:00</secondDiplomaDate>
+      <secondDiplomaCreator>4</secondDiplomaCreator>
+      <workExperienceYears>4</workExperienceYears>
+      <workExperienceMonths>4</workExperienceMonths>
+      <workExperienceDays>4</workExperienceDays>
+      <workExperienceYearsWords>4</workExperienceYearsWords>
+      <workExperienceMonthsWords>4</workExperienceMonthsWords>
+      <workExperienceDaysWords>4</workExperienceDaysWords>
+      <workPosition>4</workPosition>
+      <positionCode>4</positionCode>
+      <workPlace>4</workPlace>
+      <workTime>4</workTime>
+      <testTerm>4</testTerm>
+      <payment>4</payment>
+      <paymentWords>4</paymentWords>
+      <dateStartJob>2015-01-24T00:00:00</dateStartJob>
+>>>>>>> a9360736711ac7b180fa60ca4037ee6426ec4956
     </contract>
   </Contracts>
 </Library>
