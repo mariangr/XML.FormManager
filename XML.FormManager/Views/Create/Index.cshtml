@@ -48,7 +48,7 @@
 
         <p align=center style='text-align:center;'>
             <span class="innerText">
-                №<input type="text" id="contractNumber"/>/ Дата: <input type="date" id="contractDate" style="line-height: 17px" /> г.
+                №<input type="number" required id="contractNumber"/>/ Дата: <input type="date" required id="contractDate" style="line-height: 17px" /> г.
             </span>
         </p>
 
@@ -60,7 +60,7 @@
 
         <p>
             <span class="innerText">
-                Днес,  <input type="date" id="contractDate2" style="line-height: 17px" />г . , в гр. София, община <input type="text" id="community" />., се сключи настоящият трудов договор между:
+                Днес,  <input type="date" required id="contractDate2" style="line-height: 17px" />г . , в гр. София, община <input type="text" required id="community" />., се сключи настоящият трудов договор между:
             </span>
         </p>
 
@@ -72,7 +72,7 @@
 
         <p>
             <span class="innerText">
-                1.<input type="text" id="contractEmployer" />, със адрес: <input type="text" id="contractAddress" />, № <input type="text" id="agencyNumber" /> на Агенцията по вписванията, заемащ длъжността Управител, наричан в този договор <b>РАБОТОДАТЕЛ</b>
+                1.<input required type="text" id="contractEmployer" />, със адрес: <input required type="text" id="contractAddress" />, № <input required type="number" id="agencyNumber" /> на Агенцията по вписванията, заемащ длъжността Управител, наричан в този договор <b>РАБОТОДАТЕЛ</b>
             </span>
         </p>
 
@@ -84,45 +84,45 @@
 
         <p>
             <span class="innerText">
-                2.<input type="text" id="contractEmployee" />,наричан в този договор <b>СЛУЖИТЕЛ</b>
+                2.<input required type="text" id="contractEmployee" />,наричан в този договор <b>СЛУЖИТЕЛ</b>
             </span>
         </p>
 
         <p>
             <span class="innerText">
-                с адрес:  гр <input type="text" id="employeeCity" /> ЕГН <input type="text" id="employeeIDN" />, л.к. <input type="text" id="identityCardNumber" /> , изд. на <input type="date" id="identityCardCreateDate" />
+                с адрес:  гр <input required type="text" id="employeeCity" /> ЕГН <input required type="text" id="employeeIDN" />, л.к. <input required type="text" id="identityCardNumber" /> , изд. на <input required type="date" id="identityCardCreateDate" />
             </span>
         </p>
 
         <p>
             <span class="innerText">
-                с образование  и специалност: <input type="text" id="firstSpecialty" />,
+                с образование  и специалност: <input required type="text" id="firstSpecialty" />,
             </span>
         </p>
 
         <p>
             <span class="innerText">
-                Диплома № <input type="text" id="firstDiplomaNumber" /> / <input type="date" id="firstDiplomaDate" /> г. от<input type="text" id="firstDiplomaCreator" />
+                Диплома № <input required type="number" id="firstDiplomaNumber" /> / <input required type="date" id="firstDiplomaDate" /> г. от<input required type="text" id="firstDiplomaCreator" />
             </span>
         </p>
 
         <p>
             <span class="innerText">
-                и друга специалност <input type="text" id="secondSpecialty" /> -,
+                и друга специалност <input required type="text" id="secondSpecialty" /> -,
             </span>
         </p>
 
         <p class=MsoNormal>
             <span class="innerText">
-                Диплома № - <input type="text" id="secondDiplomaNumber" /> / <input type="date" id="secondDiplomaDate" /> г, от <input type="text" id="secondDiplomaCreator" />,
+                Диплома № - <input required type="number" id="secondDiplomaNumber" /> / <input required type="date" id="secondDiplomaDate" /> г, от <input required type="text" id="secondDiplomaCreator" />,
             </span>
         </p>
 
         <p class=MsoNormal>
             <span class="innerText">
-                с трудов стаж: <input type="text" id="workExperienceYears" /> г.,
-                <input type="text" id="workExperienceMonths" /> месеца и <input type="text" id="workExperienceDays" /> дни - словом: <input type="text" id="workExperienceYearsWords" /> години,
-                <input type="text" id="workExperienceMonthsWords" /> месеца и <input type="text" id="workExperienceDaysWords" /> дни, (не)пенсиониран(а) поради навършена пределна възраст, нетрудоспособност и т. н.
+                с трудов стаж: <input required type="number" id="workExperienceYears" /> г.,
+                <input required type="number" id="workExperienceMonths" /> месеца и <input required type="number" id="workExperienceDays" /> дни - словом: <input required type="text" id="workExperienceYearsWords" /> години,
+                <input required type="text" id="workExperienceMonthsWords" /> месеца и <input required type="text" id="workExperienceDaysWords" /> дни, (не)пенсиониран(а) поради навършена пределна възраст, нетрудоспособност и т. н.
             </span>
         </p>
 
@@ -140,25 +140,25 @@
 
         <p class=MsoNormal>
             <span class="innerText">
-                1.  РАБОТОДАТЕЛЯТ възлага, а СЛУЖИТЕЛЯТ приема да заема длъжността <input type="text" id="workPosition" /> , шифър по  НКПД <input type="text" id="positionCode" /> , която включва отговорностите, изброени в приложената длъжностна характеристика, с която служителят предварително се е запознал и му е връчен екземпляр от нея и да изпълнява възложените му задачи съгласно бизнес-плана на Дружеството.
+                1.  РАБОТОДАТЕЛЯТ възлага, а СЛУЖИТЕЛЯТ приема да заема длъжността <input required type="text" id="workPosition" /> , шифър по  НКПД <input required type="text" id="positionCode" /> , която включва отговорностите, изброени в приложената длъжностна характеристика, с която служителят предварително се е запознал и му е връчен екземпляр от нея и да изпълнява възложените му задачи съгласно бизнес-плана на Дружеството.
             </span>
         </p>
 
         <p>
             <span class="innerText">
-                2.  Мястото на работа е: <input type="text" id="workPlace" />
+                2.  Мястото на работа е: <input required type="text" id="workPlace" />
             </span>
         </p>
 
         <p>
             <span class="innerText">
-                3.  Работно време: <input type="text" id="workTime" />
+                3.  Работно време: <input required type="number" id="workTime" />
             </span>
         </p>
 
         <p>
             <span class="innerText">
-                4.  Договорът се сключва <input type="text" id="testTerm" /> срок на изпитване, в полза на работодателя, смятано от датата на постъпване на работа.
+                4.  Договорът се сключва <input required type="text" id="testTerm" /> срок на изпитване, в полза на работодателя, смятано от датата на постъпване на работа.
             </span>
         </p>
 
@@ -178,7 +178,7 @@
 
         <p>
             <span class="innerText">
-                5.  Основното месечно трудово възнаграждение е в размер на <input type="text" id="payment" /> . словом: <input type="text" id="paymentWords" /> , което ще се изплаща еднократно и окончателно до 20-то число на месеца, следващ месеца, за който се отнася.
+                5.  Основното месечно трудово възнаграждение е в размер на <input required type="number" id="payment" /> . словом: <input required type="text" id="paymentWords" /> , което ще се изплаща еднократно и окончателно до 20-то число на месеца, следващ месеца, за който се отнася.
             </span>
         </p>
 
@@ -267,7 +267,7 @@
 
         <p>
             <span class="innerText">
-                Служителят постъпи на работа на: <input type="date" id="dateStartJob" />
+                Служителят постъпи на работа на: <input required type="date" id="dateStartJob" />
             </span>
         </p>
 
@@ -293,7 +293,7 @@
 
         <p align=center style='text-align:center;'>
             <span class="innerText">
-                №<input type="text" id="internshipNumber" />/ Дата: <input type="text" id="internshipDate" /> г.
+                №<input required type="text" id="internshipNumber" />/ Дата: <input required type="text" id="internshipDate" /> г.
             </span>
         </p>
 
@@ -314,10 +314,10 @@
         </p>
 
         <p>
-            Фирмата <input type="text" id="internshipCompany" /> със седалище и адрес на управление <input type="text" id="internshipCompanyTown" /> регистрирана по фирмено дело № <input type="text" id="internshipCompanyNumber" /> по описа на
+            Фирмата <input required type="text" id="internshipCompany" /> със седалище и адрес на управление <input required type="text" id="internshipCompanyTown" /> регистрирана по фирмено дело № <input required type="text" id="internshipCompanyNumber" /> по описа на
         </p>
         <p>
-            СГС, булстат <input type="text" id="internshipCompanyBulstat" />, представлявана от <input type="text" id="internshipCompanyLeaderName" />, ЕГН: <input type="text" id="internshipCompanyLeaderEgn" /> ,издава настоящия документ
+            СГС, булстат <input required type="text" id="internshipCompanyBulstat" />, представлявана от <input required type="text" id="internshipCompanyLeaderName" />, ЕГН: <input required type="text" id="internshipCompanyLeaderEgn" /> ,издава настоящия документ
         </p>
 
         <p>
