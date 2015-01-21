@@ -1,53 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Library xmlns="http://xml.form.manager.bg" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-<<<<<<< HEAD
   <Mentors xmlns="http://xml.form.manager.bg">
-=======
-  <Mentors>
-    <mentor mentorName="1/18/2015 5:33:38 PM">
-      <mentorNumber>1</mentorNumber>
-      <mentorDay>22</mentorDay>
-      <mentorMonth>11</mentorMonth>
-      <mentorYear>2222</mentorYear>
-      <mentorFirstName>sd</mentorFirstName>
-      <mentorMiddleName>asd</mentorMiddleName>
-      <mentorLastName>asd</mentorLastName>
-      <mentorOrganization>asd</mentorOrganization>
-      <mentorFirstNameStudent>asd</mentorFirstNameStudent>
-      <mentorMiddleNameStudent>asd</mentorMiddleNameStudent>
-      <mentorLastNameStudent>asd</mentorLastNameStudent>
-      <mentorStudentDay>22</mentorStudentDay>
-      <mentorStudentMonth>12</mentorStudentMonth>
-      <mentorStudentYear>2222</mentorStudentYear>
-      <mentorStudentArrivalHour>11</mentorStudentArrivalHour>
-      <mentorStudentArrivalMinutes>11</mentorStudentArrivalMinutes>
-      <mentorStudentLeavingHour>11</mentorStudentLeavingHour>
-      <mentorStudentLeavingMinutes>11</mentorStudentLeavingMinutes>
-      <mentorStudentDescription>asd</mentorStudentDescription>
-      <mentorStudentRating>2</mentorStudentRating>
-    </mentor>
-    <mentor mentorName="1/18/2015 5:37:00 PM">
-      <mentorNumber>454</mentorNumber>
-      <mentorDay>4</mentorDay>
-      <mentorMonth>4</mentorMonth>
-      <mentorYear>2015</mentorYear>
-      <mentorFirstName>kj</mentorFirstName>
-      <mentorMiddleName>kjh</mentorMiddleName>
-      <mentorLastName>kjh</mentorLastName>
-      <mentorOrganization>kjh</mentorOrganization>
-      <mentorFirstNameStudent>kjh</mentorFirstNameStudent>
-      <mentorMiddleNameStudent>kjh</mentorMiddleNameStudent>
-      <mentorLastNameStudent>kjh</mentorLastNameStudent>
-      <mentorStudentDay>5</mentorStudentDay>
-      <mentorStudentMonth>5</mentorStudentMonth>
-      <mentorStudentYear>2018</mentorStudentYear>
-      <mentorStudentArrivalHour>4</mentorStudentArrivalHour>
-      <mentorStudentArrivalMinutes>6</mentorStudentArrivalMinutes>
-      <mentorStudentLeavingHour>4</mentorStudentLeavingHour>
-      <mentorStudentLeavingMinutes>5</mentorStudentLeavingMinutes>
-      <mentorStudentDescription>khh</mentorStudentDescription>
-      <mentorStudentRating>6</mentorStudentRating>
-    </mentor>
->>>>>>> a9360736711ac7b180fa60ca4037ee6426ec4956
+  
   </Mentors>
 </Library>
