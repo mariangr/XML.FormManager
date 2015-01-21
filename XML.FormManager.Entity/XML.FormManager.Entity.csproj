@@ -71,20 +71,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="contract\Forms.xml" />
-    <Content Include="internship\Forms.xml" />
-    <Content Include="mentor\Forms.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="contract\Form.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="internship\Form.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="mentor\Form.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />

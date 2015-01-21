@@ -102,7 +102,7 @@ namespace XML.FormManager.Entity
         {
             var appDomain = System.AppDomain.CurrentDomain;
             var basePath = appDomain.RelativeSearchPath ?? appDomain.BaseDirectory;
-            return Path.Combine(basePath.Replace("\\bin", "." + level), type.ToString());
+            return Path.Combine(basePath, type.ToString());
         }
 
         public static void CheckCreateDirectory(string path)
