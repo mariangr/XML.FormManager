@@ -72,6 +72,5 @@ C:\Users\marian.graurov\Documents\GitHub\XML.FormManager\XML.FormManager.Entity\
 C:\Users\marian.graurov\Documents\GitHub\XML.FormManager\XML.FormManager.Entity\bin\Debug\System.Web.WebPages.xml
 C:\Users\marian.graurov\Documents\GitHub\XML.FormManager\XML.FormManager.Entity\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\marian.graurov\Documents\GitHub\XML.FormManager\XML.FormManager.Entity\bin\Debug\System.Web.WebPages.Razor.xml
-C:\Users\marian.graurov\Documents\GitHub\XML.FormManager\XML.FormManager.Entity\obj\Debug\XML.FormManager.Entity.csprojResolveAssemblyReference.cache
 C:\Users\marian.graurov\Documents\GitHub\XML.FormManager\XML.FormManager.Entity\obj\Debug\XML.FormManager.Entity.dll
 C:\Users\marian.graurov\Documents\GitHub\XML.FormManager\XML.FormManager.Entity\obj\Debug\XML.FormManager.Entity.pdb
