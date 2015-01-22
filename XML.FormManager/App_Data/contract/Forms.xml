@@ -145,5 +145,41 @@
       <paymentWords>9</paymentWords>
       <dateStartJob>0009-09-09T00:00:00</dateStartJob>
     </contract>
+    <contract contractName="1/22/2015 10:49:29 AM">
+      <contractNumber>9</contractNumber>
+      <contractDate>0009-09-09T00:00:00</contractDate>
+      <contractDate2>0009-09-09T00:00:00</contractDate2>
+      <community>9</community>
+      <contractEmployer>9</contractEmployer>
+      <contractAddress>9</contractAddress>
+      <agencyNumber>9</agencyNumber>
+      <contractEmployee>9</contractEmployee>
+      <employeeCity>9</employeeCity>
+      <employeeIDN>9999999999</employeeIDN>
+      <identityCardNumber>999999999</identityCardNumber>
+      <identityCardCreateDate>0009-09-09T00:00:00</identityCardCreateDate>
+      <firstSpecialty>9</firstSpecialty>
+      <firstDiplomaNumber>9</firstDiplomaNumber>
+      <firstDiplomaDate>0009-09-09T00:00:00</firstDiplomaDate>
+      <firstDiplomaCreator>9</firstDiplomaCreator>
+      <secondSpecialty>9</secondSpecialty>
+      <secondDiplomaNumber>9</secondDiplomaNumber>
+      <secondDiplomaDate>0009-09-09T00:00:00</secondDiplomaDate>
+      <secondDiplomaCreator>9</secondDiplomaCreator>
+      <workExperienceYears>9</workExperienceYears>
+      <workExperienceMonths>9</workExperienceMonths>
+      <workExperienceDays>9</workExperienceDays>
+      <workExperienceYearsWords>9</workExperienceYearsWords>
+      <workExperienceMonthsWords>99</workExperienceMonthsWords>
+      <workExperienceDaysWords>9</workExperienceDaysWords>
+      <workPosition>9</workPosition>
+      <positionCode>9</positionCode>
+      <workPlace>9</workPlace>
+      <workTime>9</workTime>
+      <testTerm>9</testTerm>
+      <payment>9</payment>
+      <paymentWords>9</paymentWords>
+      <dateStartJob>0009-09-09T00:00:00</dateStartJob>
+    </contract>
   </Contracts>
 </Library>

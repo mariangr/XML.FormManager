@@ -95,10 +95,14 @@ namespace XML.FormManager.Entity
 
     public static class XmlHelpers
     {
-        public static string getPath(XMLFormType type, string level, string folder)
+        public static string getPath(XMLFormType? type, string level, string folder)
         {
             var appDomain = System.AppDomain.CurrentDomain;
             var basePath = appDomain.RelativeSearchPath ?? appDomain.BaseDirectory;
+            if (type == null)
+            {
+                return Path.Combine(basePath.Replace("\\bin", folder));
+            }
             return Path.Combine(basePath.Replace("\\bin", folder), type.ToString());
         }
 
@@ -114,8 +118,8 @@ namespace XML.FormManager.Entity
         {
             try
             {
-                var path = XmlHelpers.getPath(type, "Entity", "\\bin");
-                XmlTextReader reader = new XmlTextReader(path + "/Form.xsd");
+                var path = XmlHelpers.getPath(null, "Entity", "\\bin");
+                XmlTextReader reader = new XmlTextReader(path + "/" + type + ".xsd");
                 XmlSchema schema = XmlSchema.Read(reader, method);
                 doc.Schemas.Add(schema);
                 doc.Validate(method);
