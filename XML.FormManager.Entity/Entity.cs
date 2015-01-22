@@ -20,7 +20,7 @@ namespace XML.FormManager.Entity
         public static string[] getAllFormNames(XMLFormType type)
         {
             List<string> result = new List<string>();
-            var path = XmlHelpers.getPath(type, "Entity");
+            var path = XmlHelpers.getPath(type, "Entity", "\\App_Data");
             XmlDocument forms = new XmlDocument();
             forms.Load(path + "/Forms.xml");
             var names = forms.ChildNodes[1].FirstChild.ChildNodes;
@@ -34,14 +34,14 @@ namespace XML.FormManager.Entity
 
         public static XmlDocument XmlGet(XMLFormType type) 
         {
-            var filePath = XmlHelpers.getPath(type, "Entity");
+            var filePath = XmlHelpers.getPath(type, "Entity", "\\App_Data");
             var loadedXml = new XmlDocument();
             loadedXml.Load(filePath + "/Forms.xml");
             return loadedXml;
         }
 
         public static bool XmlServerSave(this XmlDocument newDocument, string fileName, XMLFormType type) {
-            var filePath = XmlHelpers.getPath(type, "Entity");
+            var filePath = XmlHelpers.getPath(type, "Entity", "\\App_Data");
             XmlHelpers.CheckCreateDirectory(filePath);
 
             XmlDocument forms = new XmlDocument();
@@ -54,9 +54,6 @@ namespace XML.FormManager.Entity
             {
                 XmlNode node = document.OwnerDocument.ImportNode(item as XmlNode, true);
                 document.AppendChild(node);
-            }
-            foreach (XmlNode node in document.ChildNodes)
-            {
             }
             appendNode.AppendChild(document);
             
@@ -98,11 +95,11 @@ namespace XML.FormManager.Entity
 
     public static class XmlHelpers
     {
-        public static string getPath(XMLFormType type, string level)
+        public static string getPath(XMLFormType type, string level, string folder)
         {
             var appDomain = System.AppDomain.CurrentDomain;
             var basePath = appDomain.RelativeSearchPath ?? appDomain.BaseDirectory;
-            return Path.Combine(basePath.Replace("\\bin", "\\App_Data"), type.ToString());
+            return Path.Combine(basePath.Replace("\\bin", folder), type.ToString());
         }
 
         public static void CheckCreateDirectory(string path)
@@ -115,11 +112,22 @@ namespace XML.FormManager.Entity
 
         public static void Validate(XmlDocument doc, XMLFormType type)
         {
-            var path = XmlHelpers.getPath(type, "Entity");
-            XmlTextReader reader = new XmlTextReader(path + "/Form.xsd");
-            XmlSchema schema = XmlSchema.Read(reader, method);
-            doc.Schemas.Add(schema);
-            doc.Validate(method);
+            try
+            {
+                var path = XmlHelpers.getPath(type, "Entity", "\\bin");
+                XmlTextReader reader = new XmlTextReader(path + "/Form.xsd");
+                XmlSchema schema = XmlSchema.Read(reader, method);
+                doc.Schemas.Add(schema);
+                doc.Validate(method);
+            }
+            catch (IOException)
+            {
+                var path = XmlHelpers.getPath(type, "Entity", "\\App_Data");
+                XmlTextReader reader = new XmlTextReader(path + "/" + type + ".xsd");
+                XmlSchema schema = XmlSchema.Read(reader, method);
+                doc.Schemas.Add(schema);
+                doc.Validate(method);
+            }
         }
 
         static void method(object sender, ValidationEventArgs e)

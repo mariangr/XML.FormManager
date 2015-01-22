@@ -165,3 +165,6 @@ C:\Users\marian.graurov\Documents\GitHub\XML.FormManager\XML.FormManager\obj\Deb
 C:\Users\Marian\Documents\Github\XML.FormManager\XML.FormManager\bin\App_Data\contract\Form.xsd
 C:\Users\Marian\Documents\Github\XML.FormManager\XML.FormManager\bin\App_Data\internship\Form.xsd
 C:\Users\Marian\Documents\Github\XML.FormManager\XML.FormManager\bin\App_Data\mentor\Form.xsd
+C:\Users\marian.graurov\Documents\GitHub\XML.FormManager\XML.FormManager\bin\App_Data\contract\contract.xsd
+C:\Users\marian.graurov\Documents\GitHub\XML.FormManager\XML.FormManager\bin\App_Data\internship\internship.xsd
+C:\Users\marian.graurov\Documents\GitHub\XML.FormManager\XML.FormManager\bin\App_Data\mentor\mentor.xsd
