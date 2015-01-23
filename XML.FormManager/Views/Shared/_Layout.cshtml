@@ -3,9 +3,31 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - XML</title>
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <script src="~/Scripts/jquery-2.1.3.min.js"></script>
+    <style>
+        body {
+            background-image: url("../../Content/background.jpg");
+            background-attachment: fixed;
+        }
+        .innerText {
+            font-size: 9.0pt;
+            font-family: "Arial CYR",sans-serif;
+            color: #080000;
+        }
+
+        input[type=date] {
+            line-height: 19px;
+        }
+
+        .XmlForm {
+            background: lightgray;
+            padding: 10px 10px 10px 10px;
+            border-radius: 5px;
+            opacity: 0.9;
+        }
+    </style>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -22,7 +44,7 @@
         </div>
     </div>
 
-    <div class="container body-content" style="margin-top: 60px">
+    <div class="container body-content" style="margin-top: 100px">
         @RenderBody()
         <hr />
         <footer>

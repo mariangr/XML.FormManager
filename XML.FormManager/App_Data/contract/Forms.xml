@@ -1,5 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Library xmlns="http://xml.form.manager.bg" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Contracts>
+    <contract contractName="1/23/2015 9:29:37 PM">
+      <contractNumber>9</contractNumber>
+      <contractDate>0009-09-09T00:00:00</contractDate>
+      <contractDate2>0009-09-09T00:00:00</contractDate2>
+      <community>9</community>
+      <contractEmployer>9</contractEmployer>
+      <contractAddress>9</contractAddress>
+      <agencyNumber>99</agencyNumber>
+      <contractEmployee>9</contractEmployee>
+      <employeeCity>9</employeeCity>
+      <employeeIDN>9999999999</employeeIDN>
+      <identityCardNumber>999999999</identityCardNumber>
+      <identityCardCreateDate>0009-09-09T00:00:00</identityCardCreateDate>
+      <firstSpecialty>9</firstSpecialty>
+      <firstDiplomaNumber>9</firstDiplomaNumber>
+      <firstDiplomaDate>0009-09-09T00:00:00</firstDiplomaDate>
+      <firstDiplomaCreator>9</firstDiplomaCreator>
+      <secondSpecialty>9</secondSpecialty>
+      <secondDiplomaNumber>9</secondDiplomaNumber>
+      <secondDiplomaDate>0009-09-09T00:00:00</secondDiplomaDate>
+      <secondDiplomaCreator>9</secondDiplomaCreator>
+      <workExperienceYears>9</workExperienceYears>
+      <workExperienceMonths>9</workExperienceMonths>
+      <workExperienceDays>9</workExperienceDays>
+      <workExperienceYearsWords>9</workExperienceYearsWords>
+      <workExperienceMonthsWords>9</workExperienceMonthsWords>
+      <workExperienceDaysWords>9</workExperienceDaysWords>
+      <workPosition>9</workPosition>
+      <positionCode>9</positionCode>
+      <workPlace>9</workPlace>
+      <workTime>9</workTime>
+      <testTerm>9</testTerm>
+      <payment>9</payment>
+      <paymentWords>9</paymentWords>
+      <dateStartJob>0099-09-09T00:00:00</dateStartJob>
+    </contract>
   </Contracts>
 </Library>

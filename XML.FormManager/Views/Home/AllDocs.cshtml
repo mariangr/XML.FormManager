@@ -3,15 +3,20 @@
     ViewBag.Title = "All Documents";
 }
 
-<p><a href="/Home/Contracts">View Contracts XML</a></p>
-<p><a href="/Home/Internships">View Internships XML</a></p>
-<p><a href="/Home/Mentors">View Mentors XML</a></p>
+<div class="XmlForm">
+    <p>
+        <a href="/Home/Contracts">View Contracts XML</a> |
+        <a href="/Home/Internships">View Internships XML</a> |
+        <a href="/Home/Mentors">View Mentors XML</a>
+    </p>
 
-@foreach (var item in Model)
-{
-    <p>Form type: @item.Type</p>
-    foreach (var form in item.Names)
-    { 
-        <p>Name: @form</p>
+    @foreach (var item in Model)
+    {
+        <p>Form type: @item.Type</p>
+        foreach (var form in item.Names)
+        {
+            <p>Name: @form</p>
+        }
+        <br />
     }
-}
+</div>
